@@ -1,2 +1,2 @@
 # Wayfinder
-A reference implementation for learning production AI engineering through a realistic AI travel assistant.
+Wayfinder is a reference implementation for exploring, learning, and teaching AI Engineering through a realistic AI application.
