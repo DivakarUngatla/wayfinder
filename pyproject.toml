@@ -1,9 +1,10 @@
 [project]
 name = "wayfinder"
 version = "0.1.0"
-description = "Add your description here"
+description = "A reference implementation for exploring, learning, and teaching AI Engineering."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.12"
+
 dependencies = [
     "fastapi>=0.128.8",
     "openai>=2.45.0",
@@ -20,3 +21,13 @@ dev = [
     "pytest-asyncio>=1.2.0",
     "ruff>=0.15.21",
 ]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
