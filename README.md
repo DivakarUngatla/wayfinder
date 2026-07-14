@@ -8,9 +8,9 @@ It evolves alongside the **AI Engineering Fundamentals** article series, with ea
 
 ## Why Wayfinder?
 
-Most AI tutorials focus on frameworks.
+Many AI tutorials focus on frameworks first.
 
-Wayfinder focuses on **engineering principles**.
+Wayfinder starts with engineering principles and introduces frameworks only when they solve a real problem.
 
 Instead of introducing every AI framework at once, the project evolves incrementally—building one concept at a time while keeping the codebase runnable and easy to understand.
 
@@ -32,7 +32,7 @@ Wayfinder follows a few simple principles:
 
 ## Current Milestone
 
-### ✅ Milestone 1 — Basic Flight Search
+### 🚧 Milestone 2 — Rule-Based Evaluation (In Progress)
 
 Implemented:
 
@@ -41,6 +41,7 @@ Implemented:
 - Search flight tool
 - Wayfinder agent
 - Runnable example
+- Rule-based evaluator (in progress)
 
 ---
 
@@ -50,6 +51,7 @@ Implemented:
 src/
     wayfinder/
         agent/
+        evaluators/
         models/
         services/
         tools/

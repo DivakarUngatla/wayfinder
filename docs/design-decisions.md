@@ -44,3 +44,7 @@ Reason
 There is no metadata yet.
 
 Introduce a response object only when pagination, warnings or statistics are needed.
+# ADR-003
+Decision: Wayfinder uses industry-standard AI engineering tools rather than reimplementing them.
+
+Rationale: The goal of Wayfinder is to teach engineers how to build production AI applications. We implement application-specific business logic (such as custom evaluators) and integrate with established tools like LangSmith and Langfuse when they solve real problems. This keeps the repository focused on engineering practices rather than framework implementation.
