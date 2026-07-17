@@ -72,18 +72,18 @@ docs/
 
 The LangSmith evaluation example requires a LangSmith account and an API key.
 
-Follow the official guide to create an account and generate an API key:
+1. Create a LangSmith account and generate an API key by following the official guide:
+   https://docs.langchain.com/langsmith/create-account-api-key
 
-[Create a LangSmith account and API key](https://docs.langchain.com/langsmith/create-account-api-key?utm_source=chatgpt.com)
+2. Copy the example environment file:
 
-Create a `.env` file in the project root:
-
-```text
-LANGSMITH_API_KEY=<your-api-key>
-LANGSMITH_TRACING=true
+```bash
+cp .env.example .env
 ```
 
-The examples automatically load these environment variables using `python-dotenv`.
+3. Replace the placeholder value in `.env` with your own API key.
+
+The LangSmith evaluation example automatically loads the `.env` file using `python-dotenv`.
 
 > **Note**
 >
