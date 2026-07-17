@@ -8,7 +8,7 @@ It evolves alongside the **AI Engineering Fundamentals** article series, with ea
 
 ## Why Wayfinder?
 
-Many AI tutorials focus on frameworks first.
+Many AI tutorials begin by introducing frameworks.
 
 Wayfinder starts with engineering principles and introduces frameworks only when they solve a real problem.
 
@@ -32,7 +32,7 @@ Wayfinder follows a few simple principles:
 
 ## Current Milestone
 
-### 🚧 Milestone 2 — Rule-Based Evaluation (In Progress)
+### ✅ Milestone 2 — Rule-Based Evaluation
 
 Implemented:
 
@@ -43,6 +43,13 @@ Implemented:
 - Runnable example
 - Rule-based evaluator (in progress)
 
+> **Note**
+>
+> The current `WayfinderAgent` intentionally uses simple rule-based parsing.
+> This keeps the focus on learning AI engineering concepts such as evaluation,
+> rather than prompt engineering or LLM orchestration. As the series progresses,
+> the agent will evolve into a more capable AI-powered implementation while
+> reusing the same evaluation framework.
 ---
 
 ## Project Structure
@@ -61,6 +68,26 @@ docs/
 ```
 
 ---
+## LangSmith Setup
+
+The LangSmith evaluation example requires a LangSmith account and an API key.
+
+Follow the official guide to create an account and generate an API key:
+
+[Create a LangSmith account and API key](https://docs.langchain.com/langsmith/create-account-api-key?utm_source=chatgpt.com)
+
+Create a `.env` file in the project root:
+
+```text
+LANGSMITH_API_KEY=<your-api-key>
+LANGSMITH_TRACING=true
+```
+
+The examples automatically load these environment variables using `python-dotenv`.
+
+> **Note**
+>
+> The local rule-based evaluation example does **not** require LangSmith or any API keys. Only the `langsmith_evaluation.py` example depends on this configuration.
 
 ## Quick Start
 
@@ -78,10 +105,22 @@ Install dependencies:
 uv sync
 ```
 
-Run the first example:
+Run the basic flight search example:
 
 ```bash
 uv run python examples/basic_flight_search.py
+```
+
+Run the local rule-based evaluation:
+
+```bash
+uv run python examples/local_evaluation.py
+```
+
+Run the LangSmith evaluation (requires LangSmith API credentials):
+
+```bash
+uv run python examples/langsmith_evaluation.py
 ```
 
 ---
@@ -89,8 +128,8 @@ uv run python examples/basic_flight_search.py
 ## Learning Journey
 
 - ✅ Milestone 1 — Basic Flight Search
-- 🚧 Milestone 2 — Rule-Based Evaluation
-- ⏳ Milestone 3 — LLM Integration
+- ✅ Milestone 2 — Rule-Based Evaluation
+- ⏳ Milestone 3 — LLM-Powered Flight Search
 - ⏳ Milestone 4 — Human Evaluation
 - ⏳ Milestone 5 — LLM-as-a-Judge
 - ⏳ Milestone 6 — Building an AI Evaluation Framework
@@ -115,3 +154,15 @@ Each article introduces one new engineering concept, and the repository implemen
 The goal is not to build a production travel platform.
 
 The goal is to demonstrate production AI engineering practices through a realistic application.
+
+## Releases
+
+Each milestone in the AI Engineering Fundamentals series is published as a GitHub Release.
+
+If you're following along with an article, check out the corresponding release to see the exact code used in that milestone.
+
+| Milestone | Release |
+|-----------|---------|
+| Basic Flight Search | v0.1.0 |
+| Rule-Based Evaluation | v0.2.0 |
+| ... | ... |

@@ -15,8 +15,14 @@ class WayfinderAgent:
         self._search_flight_tool = search_flight_tool
 
     def run(self, user_query: str) -> list[Flight] | str:
-        """Process a user query and return flights or an unsupported message."""
+        """Process a user query and return matching flights.
+
+        This example intentionally uses simple rule-based parsing to keep the
+        focus on evaluation concepts. Later parts of the series replace this
+        logic with a more capable AI-powered agent.
+        """
         query = user_query.lower()
+
         if "bangalore" in query and "tokyo" in query:
             request = FlightSearchRequest(
                 source="Bangalore",
@@ -24,5 +30,7 @@ class WayfinderAgent:
                 departure_date=date.today(),
                 passengers=1,
             )
+                    
             return self._search_flight_tool.search(request)
+
         return "Unsupported request."
