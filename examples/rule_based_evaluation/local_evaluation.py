@@ -4,6 +4,8 @@ Demonstrates how to run a RuleBasedEvaluator against WayfinderAgent results
 locally, before integrating with an evaluation platform such as LangSmith.
 """
 
+from rich import print
+
 from wayfinder.agent.wayfinder_agent import WayfinderAgent
 from wayfinder.evaluators.rule_based_evaluator import RuleBasedEvaluator
 from wayfinder.models.flight import Flight
@@ -44,18 +46,41 @@ def main() -> None:
     ]
     evaluation_results = evaluator.evaluate(ground_truth_flights, actual_flights)
     
-    print("Running rule-based evaluation...\n")
+    print("[bold]Running rule-based evaluation...[/bold]\n")
+
     # --- Report ---
-    print("=========================================")
-    print("✈️  Wayfinder")
-    print("Rule-Based Evaluation")
-    print("=========================================\n")
-    print(f"Query      : \"{query}\"")
-    print(f"Flights Returned : {len(actual_flights)}\n")
+    print("[dim]==========================================[/dim]")
+    print("[bold blue]✈ Wayfinder[/bold blue]")
+    print("[bold]Rule-Based Evaluation[/bold]")
+    print("[dim]==========================================[/dim]\n")
+
+    print(f"[cyan]Query[/cyan]             : \"{query}\"")
+    print(f"[cyan]Flights Returned[/cyan]  : {len(actual_flights)}\n")
+
     print_results(evaluation_results)
-    passed = sum(evaluation_results.values())
-    total = len(evaluation_results)
-    print(f"\nSummary: {passed}/{total} rules passed.")
+   
+    rule_results = {
+        k: v
+        for k, v in evaluation_results.items()
+        if k != "overall_pass"
+    }
+
+    passed = sum(rule_results.values())
+    total = len(rule_results)
+    overall = evaluation_results["overall_pass"]
+
+    print()
+    print("[bold]Evaluation Summary[/bold]")
+    print("[dim]------------------------------------------[/dim]")
+
+    if overall:
+        print("[bold green]✓ Overall Result : PASS[/bold green]")
+    else:
+        print("[bold red]✗ Overall Result : FAIL[/bold red]")
+
+    rules_color = "green" if passed == total else "yellow"
+    print(f"[bold {rules_color}]Rules Passed     : {passed}/{total}[/bold {rules_color}]")
+
     print()
 
 

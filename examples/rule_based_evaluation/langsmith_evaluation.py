@@ -4,6 +4,8 @@ Demonstrates how to execute the existing RuleBasedEvaluator using LangSmith,
 evaluating WayfinderAgent as the public entry point.
 """
 
+from rich.console import Console
+from rich.panel import Panel
 from typing import Any
 
 from dotenv import load_dotenv
@@ -92,8 +94,20 @@ def main() -> None:
         evaluators=[langsmith_rule_based_evaluator],
         experiment_prefix="wayfinder-rule-based",
     )
+    
+    console = Console()
+    console.print()
 
-    print("Evaluation submitted to LangSmith.")
+    console.print(
+        Panel.fit(
+            "[bold green]✓ Evaluation completed successfully[/bold green]\n\n"
+            "Click the LangSmith experiment URL printed above to\n"
+            "inspect the evaluation results in your browser.",
+            title="[bold blue]Wayfinder[/bold blue]",
+            border_style="green",
+            padding=(1, 2),
+        )
+    )
 
 
 if __name__ == "__main__":
