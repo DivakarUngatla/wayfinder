@@ -180,9 +180,9 @@ Each article introduces one new engineering concept, and the repository implemen
 
 ### Articles
 
-- Part 1 — Software Tests vs AI Evals *(link)*
-- Part 2 — Understanding AI Evaluation *(link)*
-- Part 3 — Rule-Based Evaluation *(link)*
+- [Part 1 — Software Tests vs AI Evals](https://ai.plainenglish.io/software-tests-vs-ai-evals-why-ai-applications-need-a-different-way-of-testing-205b6ae197fb?postPublishedType=repub)
+- [Part 2 — Understanding AI Evaluation](https://ai.plainenglish.io/understanding-ai-evaluation-415f345c93dd?postPublishedType=repub)
+- [Part 3 — Rule-Based Evaluation](https://medium.com/@divakar.ungatla/rule-based-evaluation-building-a-production-ready-ai-evaluation-pipeline-ee6ada3180b8)
 
 The goal is not to build a production travel platform.
 
