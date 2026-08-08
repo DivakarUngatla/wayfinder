@@ -5,6 +5,8 @@ locally, before integrating with an evaluation platform such as LangSmith.
 """
 
 from rich import print
+from dotenv import load_dotenv
+from openai import OpenAI
 
 from wayfinder.agent.wayfinder_agent import WayfinderAgent
 from wayfinder.evaluators.rule_based_evaluator import RuleBasedEvaluator
@@ -12,6 +14,9 @@ from wayfinder.models.flight import Flight
 from wayfinder.services.flight_service import FlightService
 from wayfinder.tools.search_flight_tool import SearchFlightTool
 
+load_dotenv()
+
+client = OpenAI()
 
 def print_results(results: dict[str, bool]) -> None:
     """Print evaluation results in a human-readable format."""
@@ -25,13 +30,16 @@ def main() -> None:
     # --- Setup ---
     flight_service = FlightService()
     search_flight_tool = SearchFlightTool(flight_service=flight_service)
-    agent = WayfinderAgent(search_flight_tool=search_flight_tool)
+    agent = WayfinderAgent(
+        search_flight_tool=search_flight_tool,
+        client=client,
+    )   
     evaluator = RuleBasedEvaluator()
 
     # --- Search ---
     query = "Book me a flight from Bangalore to Tokyo"
     result = agent.run(query)
-    actual_flights = result if isinstance(result, list) else []
+    actual_flights = result.flights
 
     # --- Evaluate ---
     ground_truth_flights = [

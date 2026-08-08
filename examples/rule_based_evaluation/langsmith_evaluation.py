@@ -9,6 +9,7 @@ from rich.panel import Panel
 from typing import Any
 
 from dotenv import load_dotenv
+from openai import OpenAI
 from langsmith import Client, evaluate
 
 from wayfinder.agent.wayfinder_agent import WayfinderAgent
@@ -23,16 +24,21 @@ load_dotenv()
 # --- Shared instances (constructor injection) ---
 flight_service = FlightService()
 search_flight_tool = SearchFlightTool(flight_service=flight_service)
-agent = WayfinderAgent(search_flight_tool=search_flight_tool)
+client = OpenAI()
+agent = WayfinderAgent(search_flight_tool=search_flight_tool, client=client)
 evaluator = RuleBasedEvaluator()
 
 
 def target(inputs: dict) -> dict:
     """Invoke the agent with a user query and return the results."""
     result = agent.run(inputs["query"])
-    flights = result if isinstance(result, list) else []
-    # Convert Flight models into JSON-serializable dictionaries for LangSmith.
-    return {"flights": [f.model_dump(mode="json") for f in flights]}
+    return {
+        "flights": [
+            f.model_dump(mode="json")
+            for f in result.flights
+        ],
+        "response": result.response,
+    }
 
 
 # Adapter that compares the application's predicted output against

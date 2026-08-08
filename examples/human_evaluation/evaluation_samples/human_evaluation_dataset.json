@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "basic_search_01",
+    "category": "basic_search",
+    "query": "Find me a flight from Bangalore to Tokyo.",
+    "expected_behavior": "Present all available flights from the retrieved results without filtering or ranking.",
+    "response": "Here are the available flights from Bangalore to Tokyo on August 7, 2026:\n\n1. **Air India**\n   - Flight Number: AI302\n   - Departure: 14:45\n   - Arrival: 23:10\n   - Duration: 8h 25m\n   - Price: ₹410 (Available Seats: 6)\n\n2. **Japan Airlines**\n   - Flight Number: JL703\n   - Departure: 09:15\n   - Arrival: 17:30\n   - Duration: 8h 15m\n   - Price: ₹485.5 (Available Seats: 12)\n\n3. **ANA**\n   - Flight Number: NH701\n   - Departure: 06:30\n   - Arrival: 14:45\n   - Duration: 8h 15m\n   - Price: ₹520 (Available Seats: 45)\n\n4. **Cathay Pacific**\n   - Flight Number: CX526\n   - Departure: 18:30\n   - Arrival: 02:45 (next day)\n   - Duration: 8h 15m\n   - Price: ₹890 (Available Seats: 19)\n\n5. **Singapore Airlines**\n   - Flight Number: SQ633\n   - Departure: 11:00\n   - Arrival: 19:20\n   - Duration: 8h 20m\n   - Price: ₹675 (Available Seats: 28)\n\nIf you would like more details on any specific flight or additional assistance, feel free to ask!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "basic_search_02",
+    "category": "basic_search",
+    "query": "Show me available flights from Bangalore to Tokyo this week.",
+    "expected_behavior": "Present all available flights from the retrieved results without filtering or ranking.",
+    "response": "Here are the available flights from Bangalore to Tokyo this week on August 7, 2026:\n\n1. **Air India**\n   - Flight Number: AI302\n   - Departure: 14:45\n   - Arrival: 23:10\n   - Duration: 8h 25m\n   - Price: ₹410.00\n   - Available Seats: 6\n\n2. **Japan Airlines**\n   - Flight Number: JL703\n   - Departure: 09:15\n   - Arrival: 17:30\n   - Duration: 8h 15m\n   - Price: ₹485.50\n   - Available Seats: 12\n\n3. **ANA**\n   - Flight Number: NH701\n   - Departure: 06:30\n   - Arrival: 14:45\n   - Duration: 8h 15m\n   - Price: ₹520.00\n   - Available Seats: 45\n\n4. **Singapore Airlines**\n   - Flight Number: SQ633\n   - Departure: 11:00\n   - Arrival: 19:20\n   - Duration: 8h 20m\n   - Price: ₹675.00\n   - Available Seats: 28\n\n5. **Cathay Pacific**\n   - Flight Number: CX526\n   - Departure: 18:30\n   - Arrival: 02:45 (next day)\n   - Duration: 8h 15m\n   - Price: ₹890.00\n   - Available Seats: 19\n\nLet me know if you need more information!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "basic_search_03",
+    "category": "basic_search",
+    "query": "What flights are there from BLR to NRT?",
+    "expected_behavior": "Present available flights, correctly interpreting the airport codes BLR and NRT.",
+    "response": "Here are the available flights from BLR (Kempegowda International Airport) to NRT (Narita International Airport) on August 7, 2026:\n\n1. **ANA**\n   - Flight Number: NH701\n   - Departure: 06:30 AM\n   - Arrival: 02:45 PM\n   - Duration: 8h 15m\n   - Price: ₹520\n   - Available Seats: 45\n\n2. **Japan Airlines**\n   - Flight Number: JL703\n   - Departure: 09:15 AM\n   - Arrival: 05:30 PM\n   - Duration: 8h 15m\n   - Price: ₹485.50\n   - Available Seats: 12\n\n3. **Singapore Airlines**\n   - Flight Number: SQ633\n   - Departure: 11:00 AM\n   - Arrival: 07:20 PM\n   - Duration: 8h 20m\n   - Price: ₹675\n   - Available Seats: 28\n\n4. **Air India**\n   - Flight Number: AI302\n   - Departure: 02:45 PM\n   - Arrival: 11:10 PM\n   - Duration: 8h 25m\n   - Price: ₹410\n   - Available Seats: 6\n\n5. **Cathay Pacific**\n   - Flight Number: CX526\n   - Departure: 06:30 PM\n   - Arrival: 02:45 AM (next day)\n   - Duration: 8h 15m\n   - Price: ₹890\n   - Available Seats: 19\n\nIf you need any additional information or specific details about these flights, feel free to ask!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "BLR",
+        "destination": "NRT",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "BLR",
+        "destination": "NRT",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "BLR",
+        "destination": "NRT",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "BLR",
+        "destination": "NRT",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "BLR",
+        "destination": "NRT",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "cheapest_01",
+    "category": "cheapest",
+    "query": "What is the cheapest flight from Bangalore to Tokyo tomorrow?",
+    "expected_behavior": "Recommend the retrieved flight with the lowest price without inventing information.",
+    "response": "The cheapest flight from Bangalore to Tokyo tomorrow is with Air India, flight number AI302. It departs at 14:45 and arrives in Tokyo at 23:10. The price for this flight is ₹410.",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T06:30:00",
+        "arrival_time": "2026-08-08T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T09:15:00",
+        "arrival_time": "2026-08-08T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T11:00:00",
+        "arrival_time": "2026-08-08T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T14:45:00",
+        "arrival_time": "2026-08-08T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T18:30:00",
+        "arrival_time": "2026-08-09T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "cheapest_02",
+    "category": "cheapest",
+    "query": "I want the most affordable flight from Bangalore to Tokyo next Monday.",
+    "expected_behavior": "Recommend the retrieved flight with the lowest price without inventing information.",
+    "response": "The most affordable flight from Bangalore to Tokyo next Monday is with Air India, flight AI302. It departs at 14:45 and arrives in Tokyo at 23:10. The price for this flight is ₹410.",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-10T06:30:00",
+        "arrival_time": "2026-08-10T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-10T09:15:00",
+        "arrival_time": "2026-08-10T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-10T11:00:00",
+        "arrival_time": "2026-08-10T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-10T14:45:00",
+        "arrival_time": "2026-08-10T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-10T18:30:00",
+        "arrival_time": "2026-08-11T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "cheapest_03",
+    "category": "cheapest",
+    "query": "Which flight from Bangalore to Tokyo costs the least?",
+    "expected_behavior": "Recommend the retrieved flight with the lowest price without inventing information.",
+    "response": "The cheapest flight from Bangalore to Tokyo is with Air India, flight number AI302, costing ₹410. It departs on August 7, 2026, at 14:45 and arrives at 23:10, with a duration of 8 hours and 25 minutes.",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "fastest_01",
+    "category": "fastest",
+    "query": "Show me the fastest flight from Bangalore to Tokyo today.",
+    "expected_behavior": "Recommend the retrieved flight with the shortest duration.",
+    "response": "The fastest flight from Bangalore to Tokyo today is provided by ANA, flight number NH701. It departs at 06:30 and arrives at 14:45, with a total duration of 8 hours and 15 minutes.",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "fastest_02",
+    "category": "fastest",
+    "query": "Which flight from Bangalore to Tokyo has the shortest travel time?",
+    "expected_behavior": "Recommend the retrieved flight with the shortest duration.",
+    "response": "The flights from Bangalore to Tokyo with the shortest travel time are operated by three airlines, all with a duration of 8 hours and 15 minutes. Here are the details:\n\n1. **ANA**\n   - Flight Number: NH701\n   - Departure: 2026-08-07 at 06:30\n   - Arrival: 2026-08-07 at 14:45\n   - Price: 520.0 INR\n\n2. **Japan Airlines**\n   - Flight Number: JL703\n   - Departure: 2026-08-07 at 09:15\n   - Arrival: 2026-08-07 at 17:30\n   - Price: 485.5 INR\n\n3. **Cathay Pacific**\n   - Flight Number: CX526\n   - Departure: 2026-08-07 at 18:30\n   - Arrival: 2026-08-08 at 02:45\n   - Price: 890.0 INR\n\nYou can choose any of these flights for the shortest travel time!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "fastest_03",
+    "category": "fastest",
+    "query": "I want to arrive in Tokyo as early as possible. What are my options from Bangalore?",
+    "expected_behavior": "Recommend the retrieved flight with the earliest arrival time.",
+    "response": "The earliest option for arriving in Tokyo from Bangalore is with ANA (flight NH701). It departs on August 7, 2026, at 06:30 AM and arrives in Tokyo at 02:45 PM, with a duration of 8 hours and 15 minutes. There are 45 available seats for this flight, and the price is ₹520. \n\nIf you need additional options, Japan Airlines (flight JL703) departs at 09:15 AM and arrives at 05:30 PM. Let me know if you need more details!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "passenger_count_01",
+    "category": "passenger_count",
+    "query": "I need 2 seats on a flight from Bangalore to Tokyo next Friday.",
+    "expected_behavior": "Recommend only retrieved flights that have at least 2 available seats.",
+    "response": "Here are the available flights from Bangalore to Tokyo next Friday:\n\n1. **Air India** \n   - Flight Number: AI302 \n   - Departure: 14:45 \n   - Arrival: 23:10 \n   - Duration: 8h 25m \n   - Price: 410.0 INR \n   - Available Seats: 6\n\n2. **Japan Airlines** \n   - Flight Number: JL703 \n   - Departure: 09:15 \n   - Arrival: 17:30 \n   - Duration: 8h 15m \n   - Price: 485.5 INR \n   - Available Seats: 12\n\n3. **ANA** \n   - Flight Number: NH701 \n   - Departure: 06:30 \n   - Arrival: 14:45 \n   - Duration: 8h 15m \n   - Price: 520.0 INR \n   - Available Seats: 45\n\n4. **Singapore Airlines** \n   - Flight Number: SQ633 \n   - Departure: 11:00 \n   - Arrival: 19:20 \n   - Duration: 8h 20m \n   - Price: 675.0 INR \n   - Available Seats: 28\n\n5. **Cathay Pacific** \n   - Flight Number: CX526 \n   - Departure: 18:30 \n   - Arrival: 02:45 (next day) \n   - Duration: 8h 15m \n   - Price: 890.0 INR \n   - Available Seats: 19\n\nPlease note that there are sufficient seats available on the Air India flight (6 seats remaining) and the Japan Airlines flight (12 seats remaining) for your request of 2 seats. Let me know if you need more information on any of these flights!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-14T06:30:00",
+        "arrival_time": "2026-08-14T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-14T09:15:00",
+        "arrival_time": "2026-08-14T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-14T11:00:00",
+        "arrival_time": "2026-08-14T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-14T14:45:00",
+        "arrival_time": "2026-08-14T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-14T18:30:00",
+        "arrival_time": "2026-08-15T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "passenger_count_02",
+    "category": "passenger_count",
+    "query": "Find flights from Bangalore to Tokyo for a family of 4.",
+    "expected_behavior": "Recommend only retrieved flights that have at least 4 available seats.",
+    "response": "I found several flight options for your family of 4 traveling from Bangalore to Tokyo on August 7, 2026:\n\n1. **Air India**\n   - Flight Number: AI302\n   - Departure: 14:45\n   - Arrival: 23:10\n   - Duration: 8 hours 25 minutes\n   - Price: ₹410 per person (6 seats available)\n\n2. **Japan Airlines**\n   - Flight Number: JL703\n   - Departure: 09:15\n   - Arrival: 17:30\n   - Duration: 8 hours 15 minutes\n   - Price: ₹485.5 per person (12 seats available)\n\n3. **ANA**\n   - Flight Number: NH701\n   - Departure: 06:30\n   - Arrival: 14:45\n   - Duration: 8 hours 15 minutes\n   - Price: ₹520 per person (45 seats available)\n\n4. **Singapore Airlines**\n   - Flight Number: SQ633\n   - Departure: 11:00\n   - Arrival: 19:20\n   - Duration: 8 hours 20 minutes\n   - Price: ₹675 per person (28 seats available)\n\n5. **Cathay Pacific**\n   - Flight Number: CX526\n   - Departure: 18:30\n   - Arrival: 02:45 (next day)\n   - Duration: 8 hours 15 minutes\n   - Price: ₹890 per person (19 seats available)\n\nIf you have any preferences regarding the flights or need more specific information, feel free to let me know!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "date_parsing_01",
+    "category": "date_parsing",
+    "query": "Find a flight from Bangalore to Tokyo for tomorrow.",
+    "expected_behavior": "Present retrieved flights for the correct departure date corresponding to tomorrow.",
+    "response": "Here are the available flights from Bangalore to Tokyo for tomorrow, August 8, 2026:\n\n1. **Air India**\n   - **Flight Number:** AI302\n   - **Departure:** 14:45\n   - **Arrival:** 23:10\n   - **Duration:** 8h 25m\n   - **Price:** 410.0 INR\n   - **Available Seats:** 6\n\n2. **Japan Airlines**\n   - **Flight Number:** JL703\n   - **Departure:** 09:15\n   - **Arrival:** 17:30\n   - **Duration:** 8h 15m\n   - **Price:** 485.5 INR\n   - **Available Seats:** 12\n\n3. **ANA**\n   - **Flight Number:** NH701\n   - **Departure:** 06:30\n   - **Arrival:** 14:45\n   - **Duration:** 8h 15m\n   - **Price:** 520.0 INR\n   - **Available Seats:** 45\n\n4. **Singapore Airlines**\n   - **Flight Number:** SQ633\n   - **Departure:** 11:00\n   - **Arrival:** 19:20\n   - **Duration:** 8h 20m\n   - **Price:** 675.0 INR\n   - **Available Seats:** 28\n\n5. **Cathay Pacific**\n   - **Flight Number:** CX526\n   - **Departure:** 18:30\n   - **Arrival:** 02:45 (next day)\n   - **Duration:** 8h 15m\n   - **Price:** 890.0 INR\n   - **Available Seats:** 19\n\nLet me know if you need more information on any specific flight!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T06:30:00",
+        "arrival_time": "2026-08-08T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T09:15:00",
+        "arrival_time": "2026-08-08T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T11:00:00",
+        "arrival_time": "2026-08-08T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T14:45:00",
+        "arrival_time": "2026-08-08T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T18:30:00",
+        "arrival_time": "2026-08-09T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "date_parsing_02",
+    "category": "date_parsing",
+    "query": "Are there flights from Bangalore to Tokyo next Sunday?",
+    "expected_behavior": "Present retrieved flights for the correct departure date corresponding to next Sunday.",
+    "response": "Yes, there are several flights from Bangalore to Tokyo next Sunday, August 9, 2026. Here are the available options:\n\n1. **Air India (AI302)**\n   - Departure: 14:45 \n   - Arrival: 23:10 \n   - Duration: 8h 25m \n   - Price: ₹410.00 \n   - Available seats: 6\n\n2. **Japan Airlines (JL703)**\n   - Departure: 09:15 \n   - Arrival: 17:30 \n   - Duration: 8h 15m \n   - Price: ₹485.50 \n   - Available seats: 12\n\n3. **ANA (NH701)**\n   - Departure: 06:30 \n   - Arrival: 14:45 \n   - Duration: 8h 15m \n   - Price: ₹520.00 \n   - Available seats: 45\n\n4. **Singapore Airlines (SQ633)**\n   - Departure: 11:00 \n   - Arrival: 19:20 \n   - Duration: 8h 20m \n   - Price: ₹675.00 \n   - Available seats: 28\n\n5. **Cathay Pacific (CX526)**\n   - Departure: 18:30 \n   - Arrival: 02:45 (next day) \n   - Duration: 8h 15m \n   - Price: ₹890.00 \n   - Available seats: 19\n\nLet me know if you need more information!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-09T06:30:00",
+        "arrival_time": "2026-08-09T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-09T09:15:00",
+        "arrival_time": "2026-08-09T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-09T11:00:00",
+        "arrival_time": "2026-08-09T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-09T14:45:00",
+        "arrival_time": "2026-08-09T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-09T18:30:00",
+        "arrival_time": "2026-08-10T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "date_parsing_03",
+    "category": "date_parsing",
+    "query": "I need to fly from Bangalore to Tokyo on the 15th of next month.",
+    "expected_behavior": "Present retrieved flights for the correct departure date corresponding to the 15th of next month.",
+    "response": "I found several flights from Bangalore to Tokyo on the 15th of next month:\n\n1. **Air India (AI302)**: \n   - Departure: 14:45\n   - Arrival: 23:10\n   - Duration: 8h 25m\n   - Price: ₹410.0 (available seats: 6)\n\n2. **Japan Airlines (JL703)**: \n   - Departure: 09:15\n   - Arrival: 17:30\n   - Duration: 8h 15m\n   - Price: ₹485.5 (available seats: 12)\n\n3. **ANA (NH701)**: \n   - Departure: 06:30\n   - Arrival: 14:45\n   - Duration: 8h 15m\n   - Price: ₹520.0 (available seats: 45)\n\n4. **Singapore Airlines (SQ633)**: \n   - Departure: 11:00\n   - Arrival: 19:20\n   - Duration: 8h 20m\n   - Price: ₹675.0 (available seats: 28)\n\n5. **Cathay Pacific (CX526)**: \n   - Departure: 18:30\n   - Arrival: 02:45 (next day)\n   - Duration: 8h 15m\n   - Price: ₹890.0 (available seats: 19)\n\nThe cheapest option is with **Air India** at ₹410.0, departing at 14:45. If you need more information or assistance, feel free to ask!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-09-15T06:30:00",
+        "arrival_time": "2026-09-15T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-09-15T09:15:00",
+        "arrival_time": "2026-09-15T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-09-15T11:00:00",
+        "arrival_time": "2026-09-15T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-09-15T14:45:00",
+        "arrival_time": "2026-09-15T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-09-15T18:30:00",
+        "arrival_time": "2026-09-16T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "availability_01",
+    "category": "availability_constraints",
+    "query": "Are there any flights from Bangalore to Tokyo with more than 20 available seats?",
+    "expected_behavior": "Recommend only retrieved flights that have more than 20 available seats.",
+    "response": "Yes, there are flights from Bangalore to Tokyo with more than 20 available seats. Here are the options:\n\n1. **ANA**\n   - Flight Number: NH701\n   - Departure: 2026-08-07 at 06:30\n   - Arrival: 2026-08-07 at 14:45\n   - Duration: 8h 15m\n   - Price: 520.0 INR\n   - Available Seats: 45\n\n2. **Singapore Airlines**\n   - Flight Number: SQ633\n   - Departure: 2026-08-07 at 11:00\n   - Arrival: 2026-08-07 at 19:20\n   - Duration: 8h 20m\n   - Price: 675.0 INR\n   - Available Seats: 28\n\nIf you need more information about any of these flights, feel free to ask!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "availability_02",
+    "category": "availability_constraints",
+    "query": "I need a flight from Bangalore to Tokyo that still has seats available. What do you have?",
+    "expected_behavior": "Present only retrieved flights that have at least one available seat.",
+    "response": "I found several flights from Bangalore to Tokyo with available seats:\n\n1. **Air India**\n   - Flight Number: AI302\n   - Departure: August 7, 2026, at 14:45\n   - Arrival: August 7, 2026, at 23:10\n   - Duration: 8h 25m\n   - Price: 410.0 INR\n   - Available Seats: 6\n\n2. **Japan Airlines**\n   - Flight Number: JL703\n   - Departure: August 7, 2026, at 09:15\n   - Arrival: August 7, 2026, at 17:30\n   - Duration: 8h 15m\n   - Price: 485.5 INR\n   - Available Seats: 12\n\n3. **ANA**\n   - Flight Number: NH701\n   - Departure: August 7, 2026, at 06:30\n   - Arrival: August 7, 2026, at 14:45\n   - Duration: 8h 15m\n   - Price: 520.0 INR\n   - Available Seats: 45\n\n4. **Singapore Airlines**\n   - Flight Number: SQ633\n   - Departure: August 7, 2026, at 11:00\n   - Arrival: August 7, 2026, at 19:20\n   - Duration: 8h 20m\n   - Price: 675.0 INR\n   - Available Seats: 28\n\n5. **Cathay Pacific**\n   - Flight Number: CX526\n   - Departure: August 7, 2026, at 18:30\n   - Arrival: August 8, 2026, at 02:45\n   - Duration: 8h 15m\n   - Price: 890.0 INR\n   - Available Seats: 19\n\nLet me know if you need more details about any specific flight!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "arrival_01",
+    "category": "arrival_constraints",
+    "query": "Which flight from Bangalore to Tokyo arrives before 8 PM?",
+    "expected_behavior": "Recommend only retrieved flights that arrive before 8 PM.",
+    "response": "Here are the flights from Bangalore to Tokyo that arrive before 8 PM:\n\n1. **Japan Airlines (Flight JL703)**\n   - Departure: 09:15 AM\n   - Arrival: 05:30 PM\n   - Duration: 8h 15m\n   - Price: 485.5 INR\n\n2. **Singapore Airlines (Flight SQ633)**\n   - Departure: 11:00 AM\n   - Arrival: 07:20 PM\n   - Duration: 8h 20m\n   - Price: 675.0 INR\n\nBoth of these flights will arrive in Tokyo before 8 PM.",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "arrival_02",
+    "category": "arrival_constraints",
+    "query": "I have a meeting in Tokyo at 10 PM. Which flight from Bangalore gets me there in time?",
+    "expected_behavior": "Recommend only retrieved flights that arrive before 10 PM.",
+    "response": "To arrive in Tokyo by 10 PM for your meeting, the best option from Bangalore is on Air India (flight number AI302). \n\n- **Departure:** August 7, 2026, at 14:45 (2:45 PM)\n- **Arrival:** August 7, 2026, at 23:10 (11:10 PM)\n\nWhile this flight arrives just after your meeting time, it's the latest you can depart while still arriving on the same day. \n\nIf you need advice on alternatives or other timings, let me know!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "unsupported_capability_01",
+    "category": "unsupported_capability",
+    "query": "Book me a business class ticket from Bangalore to Tokyo.",
+    "expected_behavior": "Explain that Wayfinder cannot book flights while remaining helpful.",
+    "response": "I found several flights from Bangalore to Tokyo on August 7, 2026. Here are the available options:\n\n1. **ANA (NH701)**\n   - Departure: 06:30\n   - Arrival: 14:45\n   - Duration: 8h 15m\n   - Price: ₹520.0\n   - Available Seats: 45\n\n2. **Japan Airlines (JL703)**\n   - Departure: 09:15\n   - Arrival: 17:30\n   - Duration: 8h 15m\n   - Price: ₹485.5\n   - Available Seats: 12\n\n3. **Singapore Airlines (SQ633)**\n   - Departure: 11:00\n   - Arrival: 19:20\n   - Duration: 8h 20m\n   - Price: ₹675.0\n   - Available Seats: 28\n\n4. **Air India (AI302)**\n   - Departure: 14:45\n   - Arrival: 23:10\n   - Duration: 8h 25m\n   - Price: ₹410.0\n   - Available Seats: 6\n\n5. **Cathay Pacific (CX526)**\n   - Departure: 18:30\n   - Arrival: 02:45 (next day)\n   - Duration: 8h 15m\n   - Price: ₹890.0\n   - Available Seats: 19\n\nPlease let me know which flight you prefer, and I can provide more details.",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "unsupported_capability_02",
+    "category": "unsupported_capability",
+    "query": "Can you cancel my flight from Bangalore to Tokyo?",
+    "expected_behavior": "Explain that Wayfinder cannot cancel flights while remaining helpful.",
+    "response": "I'm unable to assist with canceling a flight, as I do not have the capability to modify or manage bookings. You may want to contact the airline directly to handle your cancellation request. \n\nIf you need more information about your flight options from Bangalore to Tokyo, feel free to ask!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "unsupported_capability_03",
+    "category": "unsupported_capability",
+    "query": "I want to pay for my Bangalore to Tokyo flight using miles. Can you help?",
+    "expected_behavior": "Explain that Wayfinder cannot process payments while remaining helpful.",
+    "response": "I found several flights from Bangalore to Tokyo, but I don't have information about paying with miles. You would need to check with the airlines directly or your frequent flyer program to see if you can use miles for these flights. Here are the available flights:\n\n1. **Air India (AI302)**\n   - Departure: 14:45\n   - Arrival: 23:10\n   - Duration: 8h 25m\n   - Price: 410.0 INR\n   - Available Seats: 6\n\n2. **Japan Airlines (JL703)**\n   - Departure: 09:15\n   - Arrival: 17:30\n   - Duration: 8h 15m\n   - Price: 485.5 INR\n   - Available Seats: 12\n\n3. **ANA (NH701)**\n   - Departure: 06:30\n   - Arrival: 14:45\n   - Duration: 8h 15m\n   - Price: 520.0 INR\n   - Available Seats: 45\n\n4. **Singapore Airlines (SQ633)**\n   - Departure: 11:00\n   - Arrival: 19:20\n   - Duration: 8h 20m\n   - Price: 675.0 INR\n   - Available Seats: 28\n\n5. **Cathay Pacific (CX526)**\n   - Departure: 18:30\n   - Arrival: 02:45 (next day)\n   - Duration: 8h 15m\n   - Price: 890.0 INR\n   - Available Seats: 19\n\nPlease check with the respective airlines about the option to use miles for these flights.",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "ambiguous_request_01",
+    "category": "ambiguous_request",
+    "query": "Find me a good flight to Tokyo.",
+    "expected_behavior": "Ask a clarifying question to identify the missing departure city before making a recommendation.",
+    "response": "Here are some options for flights to Tokyo:\n\n1. **Air India**\n   - Flight Number: AI302\n   - Departure: 14:45 on August 7, 2026\n   - Arrival: 23:10 on August 7, 2026\n   - Duration: 8h 25m\n   - Price: ₹410 (12 available seats)\n\n2. **Japan Airlines**\n   - Flight Number: JL703\n   - Departure: 09:15 on August 7, 2026\n   - Arrival: 17:30 on August 7, 2026\n   - Duration: 8h 15m\n   - Price: ₹485.5 (12 available seats)\n\n3. **ANA**\n   - Flight Number: NH701\n   - Departure: 06:30 on August 7, 2026\n   - Arrival: 14:45 on August 7, 2026\n   - Duration: 8h 15m\n   - Price: ₹520 (45 available seats)\n\n4. **Singapore Airlines**\n   - Flight Number: SQ633\n   - Departure: 11:00 on August 7, 2026\n   - Arrival: 19:20 on August 7, 2026\n   - Duration: 8h 20m\n   - Price: ₹675 (28 available seats)\n\n5. **Cathay Pacific**\n   - Flight Number: CX526\n   - Departure: 18:30 on August 7, 2026\n   - Arrival: 02:45 on August 8, 2026\n   - Duration: 8h 15m\n   - Price: ₹890 (19 available seats)\n\nIf you have any preferences regarding the price, duration, or airline, please let me know!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Unknown",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Unknown",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Unknown",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Unknown",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Unknown",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "ambiguous_request_02",
+    "category": "ambiguous_request",
+    "query": "What are the best options for flying to Japan?",
+    "expected_behavior": "Ask a clarifying question to gather the missing departure city and destination airport.",
+    "response": "Here are some of the best options for flying to Japan:\n\n1. **Air India (AI302)**\n   - **Departure:** 14:45\n   - **Arrival:** 23:10\n   - **Duration:** 8h 25m\n   - **Price:** 410.0 INR\n   - **Available Seats:** 6\n\n2. **Japan Airlines (JL703)**\n   - **Departure:** 09:15\n   - **Arrival:** 17:30\n   - **Duration:** 8h 15m\n   - **Price:** 485.5 INR\n   - **Available Seats:** 12\n\n3. **ANA (NH701)**\n   - **Departure:** 06:30\n   - **Arrival:** 14:45\n   - **Duration:** 8h 15m\n   - **Price:** 520.0 INR\n   - **Available Seats:** 45\n\n4. **Singapore Airlines (SQ633)**\n   - **Departure:** 11:00\n   - **Arrival:** 19:20\n   - **Duration:** 8h 20m\n   - **Price:** 675.0 INR\n   - **Available Seats:** 28\n\n5. **Cathay Pacific (CX526)**\n   - **Departure:** 18:30\n   - **Arrival:** 02:45 (next day)\n   - **Duration:** 8h 15m\n   - **Price:** 890.0 INR\n   - **Available Seats:** 19\n\nIf you're looking for the cheapest option, Air India (AI302) at 410.0 INR is the best choice. For the fastest flight, both Japan Airlines (JL703) and ANA (NH701) have the shortest duration of 8h 15m.",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Unknown",
+        "destination": "Japan",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Unknown",
+        "destination": "Japan",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Unknown",
+        "destination": "Japan",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Unknown",
+        "destination": "Japan",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Unknown",
+        "destination": "Japan",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "ambiguous_request_03",
+    "category": "ambiguous_request",
+    "query": "I want a comfortable and affordable flight. What do you suggest?",
+    "expected_behavior": "Ask a clarifying question to gather the missing route details before making a recommendation.",
+    "response": "For a comfortable and affordable flight, I suggest the Air India flight (AI302) priced at 410.0 INR. It has a duration of 8 hours and 25 minutes and departs at 14:45, arriving at 23:10. This flight has the lowest price among the options available, making it a great choice for affordability. \n\nIf you're interested in other options, the Japan Airlines flight (JL703) is also a good choice at 485.5 INR, with a similar duration of 8 hours and 15 minutes.",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "unknown",
+        "destination": "unknown",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "unknown",
+        "destination": "unknown",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "unknown",
+        "destination": "unknown",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "unknown",
+        "destination": "unknown",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "unknown",
+        "destination": "unknown",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "missing_information_01",
+    "category": "missing_information",
+    "query": "Find me a flight to Tokyo.",
+    "expected_behavior": "Politely ask for the missing departure city instead of making assumptions.",
+    "response": "Here are the available flights to Tokyo on August 7, 2026:\n\n1. **Air India (AI302)**\n   - Departure: 14:45\n   - Arrival: 23:10\n   - Duration: 8h 25m\n   - Price: ₹410.0\n   - Available Seats: 6\n\n2. **Japan Airlines (JL703)**\n   - Departure: 09:15\n   - Arrival: 17:30\n   - Duration: 8h 15m\n   - Price: ₹485.5\n   - Available Seats: 12\n\n3. **ANA (NH701)**\n   - Departure: 06:30\n   - Arrival: 14:45\n   - Duration: 8h 15m\n   - Price: ₹520.0\n   - Available Seats: 45\n\n4. **Singapore Airlines (SQ633)**\n   - Departure: 11:00\n   - Arrival: 19:20\n   - Duration: 8h 20m\n   - Price: ₹675.0\n   - Available Seats: 28\n\n5. **Cathay Pacific (CX526)**\n   - Departure: 18:30\n   - Arrival: 02:45 (next day)\n   - Duration: 8h 15m\n   - Price: ₹890.0\n   - Available Seats: 19\n\nIf you need more details about any particular flight, let me know!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Unknown",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Unknown",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Unknown",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Unknown",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Unknown",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "missing_information_02",
+    "category": "missing_information",
+    "query": "Show me flights from Bangalore.",
+    "expected_behavior": "Politely ask for the missing destination instead of making assumptions.",
+    "response": "Here are the available flights from Bangalore on August 7, 2026:\n\n1. **Air India** - Flight AI302\n   - Departure: 14:45\n   - Arrival: 23:10\n   - Duration: 8h 25m\n   - Price: ₹410\n   - Available Seats: 6\n\n2. **Japan Airlines** - Flight JL703\n   - Departure: 09:15\n   - Arrival: 17:30\n   - Duration: 8h 15m\n   - Price: ₹485.5\n   - Available Seats: 12\n\n3. **ANA** - Flight NH701\n   - Departure: 06:30\n   - Arrival: 14:45\n   - Duration: 8h 15m\n   - Price: ₹520\n   - Available Seats: 45\n\n4. **Singapore Airlines** - Flight SQ633\n   - Departure: 11:00\n   - Arrival: 19:20\n   - Duration: 8h 20m\n   - Price: ₹675\n   - Available Seats: 28\n\n5. **Cathay Pacific** - Flight CX526\n   - Departure: 18:30\n   - Arrival: 02:45 (next day)\n   - Duration: 8h 15m\n   - Price: ₹890\n   - Available Seats: 19\n\nIf you need more details about any specific flight or if you have other inquiries, feel free to ask!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "out_of_scope_01",
+    "category": "out_of_scope",
+    "query": "What is the weather like in Tokyo tomorrow?",
+    "expected_behavior": "Politely explain that weather information is outside Wayfinder's capabilities.",
+    "response": "I'm sorry, but I don't have information about the weather in Tokyo tomorrow. My focus is on flight-related inquiries. If you have any questions regarding flights to Tokyo, feel free to ask!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Unknown",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T06:30:00",
+        "arrival_time": "2026-08-08T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Unknown",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T09:15:00",
+        "arrival_time": "2026-08-08T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Unknown",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T11:00:00",
+        "arrival_time": "2026-08-08T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Unknown",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T14:45:00",
+        "arrival_time": "2026-08-08T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Unknown",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T18:30:00",
+        "arrival_time": "2026-08-09T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "out_of_scope_02",
+    "category": "out_of_scope",
+    "query": "Do I need a visa to travel from India to Japan?",
+    "expected_behavior": "Politely explain that visa information is outside Wayfinder's capabilities.",
+    "response": "I don't have the information on visa requirements for traveling from India to Japan. You might want to check with the relevant authorities or visit official government websites for accurate visa information.",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "India",
+        "destination": "Japan",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "India",
+        "destination": "Japan",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "India",
+        "destination": "Japan",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "India",
+        "destination": "Japan",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "India",
+        "destination": "Japan",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "out_of_scope_03",
+    "category": "out_of_scope",
+    "query": "What is the best hotel near Narita airport?",
+    "expected_behavior": "Politely explain that hotel recommendations are outside Wayfinder's capabilities.",
+    "response": "I'm sorry, but I don't have information about hotels near Narita airport. My capability is focused on flight search and details. If you need assistance regarding flights, feel free to ask!",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Narita",
+        "destination": "",
+        "departure_time": "2026-08-07T06:30:00",
+        "arrival_time": "2026-08-07T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Narita",
+        "destination": "",
+        "departure_time": "2026-08-07T09:15:00",
+        "arrival_time": "2026-08-07T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Narita",
+        "destination": "",
+        "departure_time": "2026-08-07T11:00:00",
+        "arrival_time": "2026-08-07T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Narita",
+        "destination": "",
+        "departure_time": "2026-08-07T14:45:00",
+        "arrival_time": "2026-08-07T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Narita",
+        "destination": "",
+        "departure_time": "2026-08-07T18:30:00",
+        "arrival_time": "2026-08-08T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  },
+  {
+    "id": "combined_01",
+    "category": "combined_constraints",
+    "query": "Find the cheapest flight from Bangalore to Tokyo tomorrow with at least 2 available seats.",
+    "expected_behavior": "Recommend only retrieved flights satisfying all stated constraints: lowest price and at least 2 available seats.",
+    "response": "The cheapest flight from Bangalore to Tokyo tomorrow with at least 2 available seats is with Air India, flight number AI302. It departs at 14:45 and arrives in Tokyo at 23:10. The price is 410.0 INR, and there are 6 available seats.",
+    "retrieved_flights": [
+      {
+        "airline": "ANA",
+        "flight_number": "NH701",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T06:30:00",
+        "arrival_time": "2026-08-08T14:45:00",
+        "duration": "8h 15m",
+        "price": 520.0,
+        "currency": "INR",
+        "available_seats": 45
+      },
+      {
+        "airline": "Japan Airlines",
+        "flight_number": "JL703",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T09:15:00",
+        "arrival_time": "2026-08-08T17:30:00",
+        "duration": "8h 15m",
+        "price": 485.5,
+        "currency": "INR",
+        "available_seats": 12
+      },
+      {
+        "airline": "Singapore Airlines",
+        "flight_number": "SQ633",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T11:00:00",
+        "arrival_time": "2026-08-08T19:20:00",
+        "duration": "8h 20m",
+        "price": 675.0,
+        "currency": "INR",
+        "available_seats": 28
+      },
+      {
+        "airline": "Air India",
+        "flight_number": "AI302",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T14:45:00",
+        "arrival_time": "2026-08-08T23:10:00",
+        "duration": "8h 25m",
+        "price": 410.0,
+        "currency": "INR",
+        "available_seats": 6
+      },
+      {
+        "airline": "Cathay Pacific",
+        "flight_number": "CX526",
+        "source": "Bangalore",
+        "destination": "Tokyo",
+        "departure_time": "2026-08-08T18:30:00",
+        "arrival_time": "2026-08-09T02:45:00",
+        "duration": "8h 15m",
+        "price": 890.0,
+        "currency": "INR",
+        "available_seats": 19
+      }
+    ],
+    "flight_table": "| # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |\n|---|---------|--------|-----------|---------|----------|-------------|-------|\n| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |\n| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |\n| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |\n| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |\n| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |\n"
+  }
+]

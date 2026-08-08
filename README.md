@@ -1,128 +1,103 @@
 # Wayfinder
 
-Wayfinder is a reference implementation for exploring, learning, and teaching AI Engineering through a realistic AI travel assistant.
+> **An open-source reference implementation for building production-ready AI evaluation systems.**
 
-It evolves alongside the **AI Engineering Fundamentals** article series, with each milestone introducing one new AI Engineering concept and its implementation.
+[📖 AI Engineering Fundamentals](https://ai.plainenglish.io/software-tests-vs-ai-evals-why-ai-applications-need-a-different-way-of-testing-205b6ae197fb?sharedUserId=divakar.ungatla)
+• [💻 GitHub Releases](https://github.com/DivakarUngatla/wayfinder/releases)
+• [🐛 Report an Issue](https://github.com/DivakarUngatla/wayfinder/issues)
 
----
+```text
+┌────────────────────────────────────────────────────────────────────┐
+│                           Wayfinder                                │
+│              AI Evaluation Reference Implementation                │
+└────────────────────────────────────────────────────────────────────┘
 
-## Why Wayfinder?
+                    AI Evaluation Techniques
 
-Many AI tutorials begin by introducing frameworks.
+               ✅ Rule-Based Evaluation
+               👤 Human Evaluation
+               🧠 LLM-as-a-Judge
+               📊 Evaluation Experiments
 
-Wayfinder starts with engineering principles and introduces frameworks only when they solve a real problem.
+                             │
+                             ▼
 
-Instead of introducing every AI framework at once, the project evolves incrementally—building one concept at a time while keeping the codebase runnable and easy to understand.
+                  Production AI Evaluation
 
----
+               📁 Evaluation Datasets
+               📈 LangSmith Integration
+               🔄 Continuous Evaluation
+               🚀 Evaluation Pipelines
 
-## What You'll Build
+                             │
+                             ▼
 
-Throughout this series, you'll build:
+                 Measure → Learn → Improve → Repeat
+```
 
-- A realistic AI travel assistant
-- An AI evaluation framework
-- Rule-based evaluators
-- Human evaluation workflows
-- LLM-as-a-Judge evaluators
-- Production-ready AI evaluation pipelines
-- LangSmith integrations
+Wayfinder is the companion repository for the [**AI Engineering Fundamentals**](https://ai.plainenglish.io/software-tests-vs-ai-evals-why-ai-applications-need-a-different-way-of-testing-205b6ae197fb?sharedUserId=divakar.ungatla) article series.
 
----
+Instead of introducing isolated evaluation techniques, Wayfinder incrementally builds a complete AI evaluation platform—from simple rule-based evaluators to production-ready evaluation pipelines.
 
-## Engineering Principles
+A realistic AI-powered flight search assistant serves as the example application, allowing every evaluation technique to be demonstrated using real-world scenarios.
 
-Wayfinder follows a few simple principles:
+# Why Wayfinder?
 
-- Teach concepts before frameworks.
-- Introduce technologies only when they solve a real problem.
-- Build one concept at a time.
-- Keep the architecture framework-neutral.
-- Prefer readability over cleverness.
-- Earn abstractions instead of designing them upfront.
-- End every milestone with a runnable example.
+Building an AI application is only the beginning.
 
----
+The real engineering challenge is answering questions like:
 
-## Current Milestone
+- Is my AI application improving?
+- Did my latest change introduce regressions?
+- How do I evaluate subjective qualities like helpfulness or groundedness?
+- How can I scale evaluations beyond manual review?
+- How do I confidently ship AI applications to production?
 
-### ✅ Milestone 2 — Rule-Based Evaluation
+Wayfinder answers these questions by implementing modern AI evaluation techniques one milestone at a time.
 
-The following diagram shows the architecture implemented in this milestone.
+# Current Milestone
 
-![Wayfinder Rule-Based Evaluation Pipeline](./docs/images/rulebasedevaluation.png)
+## ✅ Milestone 3 — Human Evaluation 
 
-Current capabilities:
+Current capabilities include:
 
-- Flight domain models
-- Flight search service
-- Search flight tool
-- Wayfinder agent
-- Runnable examples
-- Rule-based evaluator
-- Local evaluation pipeline
+- AI-powered flight search assistant
+- Interactive command-line chat interface
+- Rule-Based Evaluation
+- Human Evaluation workflow
+- Representative evaluation datasets
+- Human evaluation rubrics
+- Local evaluation examples
 - LangSmith integration
 
-> **Note**
->
-> The current `WayfinderAgent` intentionally uses simple rule-based parsing.
-> This keeps the focus on learning AI engineering concepts such as evaluation,
-> rather than prompt engineering or LLM orchestration.
->
-> As the series progresses, the agent will evolve into a more capable AI-powered implementation while reusing the same evaluation framework.
-
----
-
-## Project Structure
+# Project Structure
 
 ```text
 src/
-    wayfinder/
-        agent/          # AI agent
-        evaluators/     # Evaluation framework
-        models/         # Domain models
-        services/       # Business services
-        tools/          # AI tools
+└── wayfinder/
+    ├── agent/
+    ├── evaluators/
+    ├── models/
+    ├── services/
+    └── tools/
 
-examples/               # Runnable examples
+examples/
+├── wayfinder_cli.py
+├── rule_based_evaluation/
+└── human_evaluation/
 
-docs/                   # Design documentation
+docs/
 ```
 
----
+# Prerequisites
 
-## LangSmith Setup
-
-The LangSmith evaluation example requires a LangSmith account and an API key.
-
-1. Create a LangSmith account and generate an API key by following the official guide:
-
-   https://docs.langchain.com/langsmith/create-account-api-key
-
-2. Copy the example environment file:
-
-```bash
-cp .env.example .env
-```
-
-3. Replace the placeholder value in `.env` with your own API key.
-
-The LangSmith evaluation example automatically loads the `.env` file using `python-dotenv`.
-
-> **Note**
->
-> The local rule-based evaluation example does **not** require LangSmith or any API keys.
-> Only the `langsmith_evaluation.py` example depends on this configuration.
-
----
-
-## Quick Start
+- Python 3.12+
+- uv
 
 Clone the repository:
 
 ```bash
 git clone https://github.com/DivakarUngatla/wayfinder.git
-
 cd wayfinder
 ```
 
@@ -132,86 +107,133 @@ Install dependencies:
 uv sync
 ```
 
-Run the basic flight search example:
+# Configuration
+
+Copy the example environment file.
 
 ```bash
-uv run python examples/basic_flight_search.py
+cp .env.example .env
 ```
 
-Run the local rule-based evaluation:
+## OpenAI API Key
+
+The interactive Wayfinder assistant and Human Evaluation examples use OpenAI models.
+
+Create an API key:
+
+https://platform.openai.com/api-keys
+
+Then update your `.env` file.
+
+```text
+OPENAI_API_KEY=your_api_key
+```
+
+> **Note**
+>
+> OpenAI is only required for examples that generate AI responses.
+
+## LangSmith (Optional)
+
+LangSmith is only required for the LangSmith evaluation examples.
+
+Create an account and API key:
+
+https://docs.langchain.com/langsmith/create-account-api-key
+
+Then update your `.env` file.
+
+```text
+LANGSMITH_API_KEY=your_api_key
+LANGSMITH_PROJECT=wayfinder
+```
+
+# Quick Start
+
+## Launch the AI Assistant
 
 ```bash
-uv run python examples/local_evaluation.py
+uv run python examples/wayfinder_cli.py
 ```
 
-Run the LangSmith evaluation:
+Interact with the AI assistant directly from your terminal.
+
+## Generate a Human Evaluation Dataset
 
 ```bash
-uv run python examples/langsmith_evaluation.py
+uv run python examples/human_evaluation/generate_responses.py
 ```
 
----
+This generates representative evaluation samples containing:
 
-## Learning Journey
+- User query
+- Expected behavior
+- Assistant response
+- Retrieved tool outputs
 
-- ✅ Milestone 1 — Basic Flight Search
-- ✅ Milestone 2 — Rule-Based Evaluation
-- ⏳ Milestone 3 — Human Evaluation
-- ⏳ Milestone 4 — LLM-as-a-Judge
-- ⏳ Milestone 5 — Building Evaluation Datasets
-- ⏳ Milestone 6 — Operationalizing AI Evaluations
-- ⏳ Milestone 7 — Comparing Evaluation Experiments
+These samples can then be reviewed using the Human Evaluation workflow.
 
----
+## Run Rule-Based Evaluation
 
-## Documentation
+```bash
+uv run python examples/rule_based_evaluation/local_evaluation.py
+```
 
-- `docs/architecture.md`
-- `docs/coding_principles.md`
-- `docs/design_decisions.md`
+## Run LangSmith Evaluation
 
----
+```bash
+uv run python examples/rule_based_evaluation/langsmith_evaluation.py
+```
 
-## AI Engineering Fundamentals
+# AI Engineering Fundamentals
 
-Wayfinder evolves alongside the **AI Engineering Fundamentals** series.
+Wayfinder evolves alongside the [**AI Engineering Fundamentals**](https://ai.plainenglish.io/software-tests-vs-ai-evals-why-ai-applications-need-a-different-way-of-testing-205b6ae197fb?sharedUserId=divakar.ungatla) article series.
 
-Each article introduces one new engineering concept, and the repository implements it step by step.
+Each article introduces one AI evaluation concept, while this repository provides the complete runnable implementation.
 
-### Articles
+## Foundations
 
-- [Part 1 — Software Tests vs AI Evals](https://ai.plainenglish.io/software-tests-vs-ai-evals-why-ai-applications-need-a-different-way-of-testing-205b6ae197fb?postPublishedType=repub)
-- [Part 2 — Understanding AI Evaluation](https://ai.plainenglish.io/understanding-ai-evaluation-415f345c93dd?postPublishedType=repub)
-- [Part 3 — Rule-Based Evaluation](https://medium.com/@divakar.ungatla/rule-based-evaluation-building-a-production-ready-ai-evaluation-pipeline-ee6ada3180b8)
+- ✅ [Part 1 — Software Tests vs AI Evals](https://ai.plainenglish.io/software-tests-vs-ai-evals-why-ai-applications-need-a-different-way-of-testing-205b6ae197fb?sharedUserId=divakar.ungatla)
+- ✅ [Part 2 — Understanding AI Evaluation](https://medium.com/ai-in-plain-english/understanding-ai-evaluation-a-practical-framework-for-building-reliable-ai-systems-99922388c7b4?sharedUserId=divakar.ungatla)
 
-The goal is not to build a production travel platform.
+## Evaluation Techniques
 
-The goal is to demonstrate production AI engineering practices through a realistic application.
+- ✅ [Part 3 — Rule-Based Evaluation](https://medium.com/towards-artificial-intelligence/rule-based-evaluation-building-a-production-ready-ai-evaluation-pipeline-ee6ada3180b8?sharedUserId=divakar.ungatla)
+- ✅ [Part 4 — Human Evaluation](https://ai.plainenglish.io/human-evaluation-how-to-incorporate-human-feedback-into-your-ai-evaluation-workflow-37dbef30ab8e?sharedUserId=divakar.ungatla)
+- ⏳ Part 5 — LLM-as-a-Judge
 
----
+## Production AI Evaluation
 
-## Releases
+- ⏳ Part 6 — Building Production Evaluation Datasets
+- ⏳ Part 7 — Operationalizing AI Evaluations
+- ⏳ Part 8 — Evaluation Experiments
 
-Each GitHub Release corresponds to a milestone in the AI Engineering Fundamentals series.
+# Releases
 
-Checking out a release lets you reproduce the exact code used in that article.
+Each GitHub release corresponds to a milestone in the AI Engineering Fundamentals series.
+
+Checking out a release allows you to reproduce the exact implementation used throughout that article.
 
 | Milestone | Release |
 |-----------|---------|
-| Basic Flight Search | `v0.1.0` |
-| Rule-Based Evaluation | `v0.2.1` |
-| ... | ... |
+| Basic Flight Search | [v0.1.0](https://github.com/DivakarUngatla/wayfinder/tree/v0.1.0) |
+| Rule-Based Evaluation | [v0.2.2](https://github.com/DivakarUngatla/wayfinder/tree/v0.2.2) |
+| Human Evaluation | [v0.3.0](https://github.com/DivakarUngatla/wayfinder/tree/v0.3.0) |
 
----
+# Documentation
 
-## Contributing
+Additional documentation is available in the `docs/` directory.
 
-Contributions, bug reports, and suggestions are welcome.
+- Architecture
+- Design Decisions
+- Coding Principles
 
-If you spot an issue or have ideas for improving the learning experience, feel free to open an issue or submit a pull request.
+# Contributing
 
----
+Contributions, ideas, bug reports, and suggestions are always welcome.
 
-## License
+If you'd like to improve Wayfinder or discuss AI evaluation techniques, feel free to open an issue or submit a pull request.
+
+# License
 
 This project is licensed under the MIT License.

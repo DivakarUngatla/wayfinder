@@ -1,9 +1,14 @@
 """Basic flight search example for Wayfinder."""
 
+import openai
+from dotenv import load_dotenv
+
 from wayfinder.agent.wayfinder_agent import WayfinderAgent
 from wayfinder.models.flight import Flight
 from wayfinder.services.flight_service import FlightService
 from wayfinder.tools.search_flight_tool import SearchFlightTool
+
+load_dotenv()
 
 
 def print_flights(flights: list[Flight]) -> None:
@@ -24,22 +29,25 @@ def main() -> None:
     """Run a basic flight search."""
     flight_service = FlightService()
     search_flight_tool = SearchFlightTool(flight_service=flight_service)
-    agent = WayfinderAgent(search_flight_tool=search_flight_tool)
+    agent = WayfinderAgent(search_flight_tool=search_flight_tool, client=openai.OpenAI())
 
     query = "Book me the cheapest flight from Bangalore to Tokyo next Friday."
 
     print("=========================================")
-    print("\u2708\ufe0f  Wayfinder")
+    print("✈️  Wayfinder")
     print("Basic Flight Search Example")
     print("=========================================\n")
     print(f"Query: {query}\n")
 
     result = agent.run(query)
 
-    if isinstance(result, str):
-        print(result)
-    else:
-        print_flights(result)
+    print("Assistant\n---------")
+    print(result.response)
+    print()
+
+    if result.flights:
+        print("Retrieved Flight Results\n------------------------")
+        print_flights(result.flights)
 
 
 if __name__ == "__main__":

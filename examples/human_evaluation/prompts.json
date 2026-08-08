@@ -1,0 +1,182 @@
+[
+  {
+    "id": "basic_search_01",
+    "category": "basic_search",
+    "query": "Find me a flight from Bangalore to Tokyo.",
+    "expected_behavior": "Present all available flights from the retrieved results without filtering or ranking."
+  },
+  {
+    "id": "basic_search_02",
+    "category": "basic_search",
+    "query": "Show me available flights from Bangalore to Tokyo this week.",
+    "expected_behavior": "Present all available flights from the retrieved results without filtering or ranking."
+  },
+  {
+    "id": "basic_search_03",
+    "category": "basic_search",
+    "query": "What flights are there from BLR to NRT?",
+    "expected_behavior": "Present available flights, correctly interpreting the airport codes BLR and NRT."
+  },
+  {
+    "id": "cheapest_01",
+    "category": "cheapest",
+    "query": "What is the cheapest flight from Bangalore to Tokyo tomorrow?",
+    "expected_behavior": "Recommend the retrieved flight with the lowest price without inventing information."
+  },
+  {
+    "id": "cheapest_02",
+    "category": "cheapest",
+    "query": "I want the most affordable flight from Bangalore to Tokyo next Monday.",
+    "expected_behavior": "Recommend the retrieved flight with the lowest price without inventing information."
+  },
+  {
+    "id": "cheapest_03",
+    "category": "cheapest",
+    "query": "Which flight from Bangalore to Tokyo costs the least?",
+    "expected_behavior": "Recommend the retrieved flight with the lowest price without inventing information."
+  },
+  {
+    "id": "fastest_01",
+    "category": "fastest",
+    "query": "Show me the fastest flight from Bangalore to Tokyo today.",
+    "expected_behavior": "Recommend the retrieved flight with the shortest duration."
+  },
+  {
+    "id": "fastest_02",
+    "category": "fastest",
+    "query": "Which flight from Bangalore to Tokyo has the shortest travel time?",
+    "expected_behavior": "Recommend the retrieved flight with the shortest duration."
+  },
+  {
+    "id": "fastest_03",
+    "category": "fastest",
+    "query": "I want to arrive in Tokyo as early as possible. What are my options from Bangalore?",
+    "expected_behavior": "Recommend the retrieved flight with the earliest arrival time."
+  },
+  {
+    "id": "passenger_count_01",
+    "category": "passenger_count",
+    "query": "I need 2 seats on a flight from Bangalore to Tokyo next Friday.",
+    "expected_behavior": "Recommend only retrieved flights that have at least 2 available seats."
+  },
+  {
+    "id": "passenger_count_02",
+    "category": "passenger_count",
+    "query": "Find flights from Bangalore to Tokyo for a family of 4.",
+    "expected_behavior": "Recommend only retrieved flights that have at least 4 available seats."
+  },
+  {
+    "id": "date_parsing_01",
+    "category": "date_parsing",
+    "query": "Find a flight from Bangalore to Tokyo for tomorrow.",
+    "expected_behavior": "Present retrieved flights for the correct departure date corresponding to tomorrow."
+  },
+  {
+    "id": "date_parsing_02",
+    "category": "date_parsing",
+    "query": "Are there flights from Bangalore to Tokyo next Sunday?",
+    "expected_behavior": "Present retrieved flights for the correct departure date corresponding to next Sunday."
+  },
+  {
+    "id": "date_parsing_03",
+    "category": "date_parsing",
+    "query": "I need to fly from Bangalore to Tokyo on the 15th of next month.",
+    "expected_behavior": "Present retrieved flights for the correct departure date corresponding to the 15th of next month."
+  },
+  {
+    "id": "availability_01",
+    "category": "availability_constraints",
+    "query": "Are there any flights from Bangalore to Tokyo with more than 20 available seats?",
+    "expected_behavior": "Recommend only retrieved flights that have more than 20 available seats."
+  },
+  {
+    "id": "availability_02",
+    "category": "availability_constraints",
+    "query": "I need a flight from Bangalore to Tokyo that still has seats available. What do you have?",
+    "expected_behavior": "Present only retrieved flights that have at least one available seat."
+  },
+  {
+    "id": "arrival_01",
+    "category": "arrival_constraints",
+    "query": "Which flight from Bangalore to Tokyo arrives before 8 PM?",
+    "expected_behavior": "Recommend only retrieved flights that arrive before 8 PM."
+  },
+  {
+    "id": "arrival_02",
+    "category": "arrival_constraints",
+    "query": "I have a meeting in Tokyo at 10 PM. Which flight from Bangalore gets me there in time?",
+    "expected_behavior": "Recommend only retrieved flights that arrive before 10 PM."
+  },
+  {
+    "id": "unsupported_capability_01",
+    "category": "unsupported_capability",
+    "query": "Book me a business class ticket from Bangalore to Tokyo.",
+    "expected_behavior": "Explain that Wayfinder cannot book flights while remaining helpful."
+  },
+  {
+    "id": "unsupported_capability_02",
+    "category": "unsupported_capability",
+    "query": "Can you cancel my flight from Bangalore to Tokyo?",
+    "expected_behavior": "Explain that Wayfinder cannot cancel flights while remaining helpful."
+  },
+  {
+    "id": "unsupported_capability_03",
+    "category": "unsupported_capability",
+    "query": "I want to pay for my Bangalore to Tokyo flight using miles. Can you help?",
+    "expected_behavior": "Explain that Wayfinder cannot process payments while remaining helpful."
+  },
+  {
+    "id": "ambiguous_request_01",
+    "category": "ambiguous_request",
+    "query": "Find me a good flight to Tokyo.",
+    "expected_behavior": "Ask a clarifying question to identify the missing departure city before making a recommendation."
+  },
+  {
+    "id": "ambiguous_request_02",
+    "category": "ambiguous_request",
+    "query": "What are the best options for flying to Japan?",
+    "expected_behavior": "Ask a clarifying question to gather the missing departure city and destination airport."
+  },
+  {
+    "id": "ambiguous_request_03",
+    "category": "ambiguous_request",
+    "query": "I want a comfortable and affordable flight. What do you suggest?",
+    "expected_behavior": "Ask a clarifying question to gather the missing route details before making a recommendation."
+  },
+  {
+    "id": "missing_information_01",
+    "category": "missing_information",
+    "query": "Find me a flight to Tokyo.",
+    "expected_behavior": "Politely ask for the missing departure city instead of making assumptions."
+  },
+  {
+    "id": "missing_information_02",
+    "category": "missing_information",
+    "query": "Show me flights from Bangalore.",
+    "expected_behavior": "Politely ask for the missing destination instead of making assumptions."
+  },
+  {
+    "id": "out_of_scope_01",
+    "category": "out_of_scope",
+    "query": "What is the weather like in Tokyo tomorrow?",
+    "expected_behavior": "Politely explain that weather information is outside Wayfinder's capabilities."
+  },
+  {
+    "id": "out_of_scope_02",
+    "category": "out_of_scope",
+    "query": "Do I need a visa to travel from India to Japan?",
+    "expected_behavior": "Politely explain that visa information is outside Wayfinder's capabilities."
+  },
+  {
+    "id": "out_of_scope_03",
+    "category": "out_of_scope",
+    "query": "What is the best hotel near Narita airport?",
+    "expected_behavior": "Politely explain that hotel recommendations are outside Wayfinder's capabilities."
+  },
+  {
+    "id": "combined_01",
+    "category": "combined_constraints",
+    "query": "Find the cheapest flight from Bangalore to Tokyo tomorrow with at least 2 available seats.",
+    "expected_behavior": "Recommend only retrieved flights satisfying all stated constraints: lowest price and at least 2 available seats."
+  }
+]
