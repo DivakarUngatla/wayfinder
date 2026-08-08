@@ -1,39 +1,10 @@
 # Wayfinder
 
-> **An open-source reference implementation for building production-ready AI evaluation systems.**
+**An open-source reference implementation for building production-ready AI evaluation systems.**
 
 [📖 AI Engineering Fundamentals](https://ai.plainenglish.io/software-tests-vs-ai-evals-why-ai-applications-need-a-different-way-of-testing-205b6ae197fb?sharedUserId=divakar.ungatla)
 • [💻 GitHub Releases](https://github.com/DivakarUngatla/wayfinder/releases)
 • [🐛 Report an Issue](https://github.com/DivakarUngatla/wayfinder/issues)
-
-```text
-┌────────────────────────────────────────────────────────────────────┐
-│                           Wayfinder                                │
-│              AI Evaluation Reference Implementation                │
-└────────────────────────────────────────────────────────────────────┘
-
-                    AI Evaluation Techniques
-
-               ✅ Rule-Based Evaluation
-               👤 Human Evaluation
-               🧠 LLM-as-a-Judge
-               📊 Evaluation Experiments
-
-                             │
-                             ▼
-
-                  Production AI Evaluation
-
-               📁 Evaluation Datasets
-               📈 LangSmith Integration
-               🔄 Continuous Evaluation
-               🚀 Evaluation Pipelines
-
-                             │
-                             ▼
-
-                 Measure → Learn → Improve → Repeat
-```
 
 Wayfinder is the companion repository for the [**AI Engineering Fundamentals**](https://ai.plainenglish.io/software-tests-vs-ai-evals-why-ai-applications-need-a-different-way-of-testing-205b6ae197fb?sharedUserId=divakar.ungatla) article series.
 
@@ -199,7 +170,7 @@ Each article introduces one AI evaluation concept, while this repository provide
 ## Evaluation Techniques
 
 - ✅ [Part 3 — Rule-Based Evaluation](https://medium.com/towards-artificial-intelligence/rule-based-evaluation-building-a-production-ready-ai-evaluation-pipeline-ee6ada3180b8?sharedUserId=divakar.ungatla)
-- ✅ [Part 4 — Human Evaluation](https://ai.plainenglish.io/human-evaluation-how-to-incorporate-human-feedback-into-your-ai-evaluation-workflow-37dbef30ab8e?sharedUserId=divakar.ungatla)
+- ✅ [Part 4 — Human Evaluation](https://medium.com/@divakar.ungatla/human-evaluation-building-reusable-evaluation-datasets-for-ai-applications-54f6d93fd2db?sharedUserId=divakar.ungatla)
 - ⏳ Part 5 — LLM-as-a-Judge
 
 ## Production AI Evaluation
