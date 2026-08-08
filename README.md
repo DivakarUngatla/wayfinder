@@ -1,6 +1,6 @@
 # Wayfinder
 
-**An open-source reference implementation for building production-ready AI evaluation systems.**
+**A reference implementation for learning and building AI evaluation systems.**
 
 [📖 AI Engineering Fundamentals](https://ai.plainenglish.io/software-tests-vs-ai-evals-why-ai-applications-need-a-different-way-of-testing-205b6ae197fb?sharedUserId=divakar.ungatla)
 • [💻 GitHub Releases](https://github.com/DivakarUngatla/wayfinder/releases)
