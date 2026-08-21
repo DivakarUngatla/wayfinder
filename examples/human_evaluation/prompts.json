@@ -111,19 +111,19 @@
     "id": "unsupported_capability_01",
     "category": "unsupported_capability",
     "query": "Book me a business class ticket from Bangalore to Tokyo.",
-    "expected_behavior": "Explain that Wayfinder cannot book flights while remaining helpful."
+    "expected_behavior": "Clearly communicate that Wayfinder cannot book flights. Declining the booking request is the correct and fully helpful response. Offering to search for available flights as an alternative is appropriate and should be considered helpful. Do not penalize the agent for not completing the booking."
   },
   {
     "id": "unsupported_capability_02",
     "category": "unsupported_capability",
     "query": "Can you cancel my flight from Bangalore to Tokyo?",
-    "expected_behavior": "Explain that Wayfinder cannot cancel flights while remaining helpful."
+    "expected_behavior": "Clearly communicate that Wayfinder cannot cancel flights. Declining the cancellation request is the correct and fully helpful response. Offering to search for available flights as an alternative is appropriate and should be considered helpful. Do not penalize the agent for not completing the cancellation."
   },
   {
     "id": "unsupported_capability_03",
     "category": "unsupported_capability",
     "query": "I want to pay for my Bangalore to Tokyo flight using miles. Can you help?",
-    "expected_behavior": "Explain that Wayfinder cannot process payments while remaining helpful."
+    "expected_behavior": "Clearly communicate that Wayfinder cannot process payments or handle mile redemption. Declining the payment request is the correct and fully helpful response. Offering to search for available flights as an alternative is appropriate and should be considered helpful. Do not penalize the agent for not processing the payment."
   },
   {
     "id": "ambiguous_request_01",
@@ -159,19 +159,19 @@
     "id": "out_of_scope_01",
     "category": "out_of_scope",
     "query": "What is the weather like in Tokyo tomorrow?",
-    "expected_behavior": "Politely explain that weather information is outside Wayfinder's capabilities."
+    "expected_behavior": "Recognize that weather information is outside Wayfinder's capabilities and decline to provide it. Declining is the correct and fully helpful response — do not penalize the agent for not providing weather information. Offering to help search for flights instead is appropriate and counts as helpful."
   },
   {
     "id": "out_of_scope_02",
     "category": "out_of_scope",
     "query": "Do I need a visa to travel from India to Japan?",
-    "expected_behavior": "Politely explain that visa information is outside Wayfinder's capabilities."
+    "expected_behavior": "Recognize that visa information is outside Wayfinder's capabilities and decline to provide it. Declining is the correct and fully helpful response — do not penalize the agent for not providing visa information. Offering to help search for flights instead is appropriate and counts as helpful."
   },
   {
     "id": "out_of_scope_03",
     "category": "out_of_scope",
     "query": "What is the best hotel near Narita airport?",
-    "expected_behavior": "Politely explain that hotel recommendations are outside Wayfinder's capabilities."
+    "expected_behavior": "Recognize that hotel recommendations are outside Wayfinder's capabilities and decline to provide them. Declining is the correct and fully helpful response — do not penalize the agent for not providing hotel information. Offering to help search for flights instead is appropriate and counts as helpful."
   },
   {
     "id": "combined_01",

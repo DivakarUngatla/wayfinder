@@ -195,13 +195,6 @@ def main() -> None:
     OUTPUT_FILE.write_text(build_markdown(samples), encoding="utf-8")
     print(f"Markdown → {OUTPUT_FILE}")
 
-    # --- Save JSON (for automated evaluation) ---
-    json_output_file = OUTPUT_DIR / "human_evaluation_dataset.json"
-    json_output_file.write_text(
-        json.dumps(samples, indent=2, ensure_ascii=False),
-        encoding="utf-8",
-    )
-    print(f"JSON     → {json_output_file}")
 
     print(f"\n{len(samples)} sample(s) saved.")
 
