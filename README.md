@@ -28,7 +28,7 @@ Wayfinder answers these questions by implementing modern AI evaluation technique
 
 # Current Milestone
 
-## ✅ Milestone 3 — Human Evaluation 
+## ✅ Milestone 4 — LLM-as-a-Judge
 
 Current capabilities include:
 
@@ -36,8 +36,10 @@ Current capabilities include:
 - Interactive command-line chat interface
 - Rule-Based Evaluation
 - Human Evaluation workflow
+- LLM-as-a-Judge evaluation pipeline
+- Evaluation criteria and scoring rubrics
+- Structured judge outputs
 - Representative evaluation datasets
-- Human evaluation rubrics
 - Local evaluation examples
 - LangSmith integration
 
@@ -55,7 +57,8 @@ src/
 examples/
 ├── wayfinder_cli.py
 ├── rule_based_evaluation/
-└── human_evaluation/
+├── human_evaluation/
+└── llm_judge_evaluation/
 
 docs/
 ```
@@ -129,7 +132,7 @@ uv run python examples/wayfinder_cli.py
 
 Interact with the AI assistant directly from your terminal.
 
-## Generate a Human Evaluation Dataset
+## Generate Human Evaluation Dataset
 
 ```bash
 uv run python examples/human_evaluation/generate_responses.py
@@ -155,6 +158,17 @@ uv run python examples/rule_based_evaluation/local_evaluation.py
 ```bash
 uv run python examples/rule_based_evaluation/langsmith_evaluation.py
 ```
+## Run LLM-as-a-Judge Evaluation
+
+```bash
+uv run python examples/llm_judge_evaluation/local_evaluation.py
+```
+
+## Run LLM-as-a-Judge Evaluation with LangSmith
+
+```bash
+uv run python examples/llm_judge_evaluation/langsmith_evaluation.py
+```
 
 # AI Engineering Fundamentals
 
@@ -170,14 +184,10 @@ Each article introduces one AI evaluation concept, while this repository provide
 ## Evaluation Techniques
 
 - ✅ [Part 3 — Rule-Based Evaluation](https://medium.com/towards-artificial-intelligence/rule-based-evaluation-building-a-production-ready-ai-evaluation-pipeline-ee6ada3180b8?sharedUserId=divakar.ungatla)
-- ✅ [Part 4 — Human Evaluation](https://medium.com/@divakar.ungatla/human-evaluation-building-reusable-evaluation-datasets-for-ai-applications-54f6d93fd2db?sharedUserId=divakar.ungatla)
-- ⏳ Part 5 — LLM-as-a-Judge
-
-## Production AI Evaluation
-
-- ⏳ Part 6 — Building Production Evaluation Datasets
-- ⏳ Part 7 — Operationalizing AI Evaluations
-- ⏳ Part 8 — Evaluation Experiments
+- ✅ [Part 4 — Human Evaluation](https://pub.towardsai.net/human-evaluation-building-reusable-evaluation-datasets-for-ai-applications-54f6d93fd2db?sharedUserId=divakar.ungatla)
+- ✅ [Part 5 — LLM-as-a-Judge](https://medium.com/@divakar.ungatla/llm-as-a-judge-building-automated-evaluation-pipelines-for-ai-applications-8680a412a1bd?sharedUserId=divakar.ungatla)
+- ⏳ Part 6 — Online Evaluation
+- ⏳ Part 7 — Comparing Evaluation Experiments
 
 # Releases
 
@@ -190,6 +200,7 @@ Checking out a release allows you to reproduce the exact implementation used thr
 | Basic Flight Search | [v0.1.0](https://github.com/DivakarUngatla/wayfinder/tree/v0.1.0) |
 | Rule-Based Evaluation | [v0.2.2](https://github.com/DivakarUngatla/wayfinder/tree/v0.2.2) |
 | Human Evaluation | [v0.3.0](https://github.com/DivakarUngatla/wayfinder/tree/v0.3.0) |
+| LLM-as-a-Judge | [v0.4.0](https://github.com/DivakarUngatla/wayfinder/tree/v0.4.0) |
 
 # Documentation
 
