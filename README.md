@@ -10,7 +10,7 @@ Wayfinder is the companion repository for the [**AI Engineering Fundamentals**](
 
 Instead of introducing isolated evaluation techniques, Wayfinder incrementally builds a complete AI evaluation platform—from simple rule-based evaluators to production-ready evaluation pipelines.
 
-A realistic AI-powered flight search assistant serves as the example application, allowing every evaluation technique to be demonstrated using real-world scenarios.
+An AI-powered flight search assistant serves as the example application, allowing every evaluation technique to be demonstrated using real-world scenarios.
 
 # Why Wayfinder?
 
@@ -28,7 +28,7 @@ Wayfinder answers these questions by implementing modern AI evaluation technique
 
 # Current Milestone
 
-## ✅ Milestone 4 — LLM-as-a-Judge
+## ✅ Milestone 5 — Online Evaluation
 
 Current capabilities include:
 
@@ -37,6 +37,11 @@ Current capabilities include:
 - Rule-Based Evaluation
 - Human Evaluation workflow
 - LLM-as-a-Judge evaluation pipeline
+- Online Evaluation pipeline
+- Real user interaction tracing
+- Explicit user feedback collection
+- Reference-free online LLM judge
+- Background evaluation of captured interactions
 - Evaluation criteria and scoring rubrics
 - Structured judge outputs
 - Representative evaluation datasets
@@ -58,7 +63,8 @@ examples/
 ├── wayfinder_cli.py
 ├── rule_based_evaluation/
 ├── human_evaluation/
-└── llm_judge_evaluation/
+├── llm_judge_evaluation/
+└── online_evaluation/
 
 docs/
 ```
@@ -107,9 +113,9 @@ OPENAI_API_KEY=your_api_key
 >
 > OpenAI is only required for examples that generate AI responses.
 
-## LangSmith (Optional)
+## LangSmith
 
-LangSmith is only required for the LangSmith evaluation examples.
+LangSmith is required for interaction tracing and the LangSmith-based evaluation examples, including Online Evaluation.
 
 Create an account and API key:
 
@@ -170,6 +176,25 @@ uv run python examples/llm_judge_evaluation/local_evaluation.py
 uv run python examples/llm_judge_evaluation/langsmith_evaluation.py
 ```
 
+## Run Online Evaluation
+
+First, interact with Wayfinder to generate traced user interactions:
+
+```bash
+uv run python examples/wayfinder_cli.py
+```
+
+Then run the online evaluator:
+
+```bash
+uv run python examples/online_evaluation/evaluate_recent_runs.py
+```
+
+The evaluator processes recent Wayfinder interactions captured in LangSmith and attaches automated quality scores and explanations back to each trace.
+
+Explicit user feedback collected through the CLI is also attached to the corresponding [**LangSmith trace**](https://smith.langchain.com).
+
+
 # AI Engineering Fundamentals
 
 Wayfinder evolves alongside the [**AI Engineering Fundamentals**](https://ai.plainenglish.io/software-tests-vs-ai-evals-why-ai-applications-need-a-different-way-of-testing-205b6ae197fb?sharedUserId=divakar.ungatla) article series.
@@ -186,7 +211,7 @@ Each article introduces one AI evaluation concept, while this repository provide
 - ✅ [Part 3 — Rule-Based Evaluation](https://medium.com/towards-artificial-intelligence/rule-based-evaluation-building-a-production-ready-ai-evaluation-pipeline-ee6ada3180b8?sharedUserId=divakar.ungatla)
 - ✅ [Part 4 — Human Evaluation](https://pub.towardsai.net/human-evaluation-building-reusable-evaluation-datasets-for-ai-applications-54f6d93fd2db?sharedUserId=divakar.ungatla)
 - ✅ [Part 5 — LLM-as-a-Judge](https://medium.com/@divakar.ungatla/llm-as-a-judge-building-automated-evaluation-pipelines-for-ai-applications-8680a412a1bd?sharedUserId=divakar.ungatla)
-- ⏳ Part 6 — Online Evaluation
+- ✅ [Part 6 — Online Evaluation](https://medium.com/@divakar.ungatla/online-evaluation-building-ai-evaluation-pipelines-for-real-user-interactions-a25081a8f390?sharedUserId=divakar.ungatla)
 - ⏳ Part 7 — Comparing Evaluation Experiments
 
 # Releases
@@ -201,6 +226,7 @@ Checking out a release allows you to reproduce the exact implementation used thr
 | Rule-Based Evaluation | [v0.2.2](https://github.com/DivakarUngatla/wayfinder/tree/v0.2.2) |
 | Human Evaluation | [v0.3.0](https://github.com/DivakarUngatla/wayfinder/tree/v0.3.0) |
 | LLM-as-a-Judge | [v0.4.0](https://github.com/DivakarUngatla/wayfinder/tree/v0.4.0) |
+| Online Evaluation | [v0.5.0](https://github.com/DivakarUngatla/wayfinder/tree/v0.5.0) |
 
 # Documentation
 

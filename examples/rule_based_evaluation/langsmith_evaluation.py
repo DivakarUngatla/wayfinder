@@ -80,7 +80,7 @@ def main() -> None:
     if not client.has_dataset(dataset_name=dataset_name):
         dataset = client.create_dataset(dataset_name=dataset_name)
         client.create_example(
-            inputs={"query": "Book me a flight from Bangalore to Tokyo"},
+            inputs={"query": "Find me a flight from Bangalore to Tokyo"},
             outputs={
                 "expected_flights": [
                     {

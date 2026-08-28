@@ -2,6 +2,7 @@
 
 import json
 from datetime import date
+from typing import Any
 
 import openai
 
@@ -9,6 +10,8 @@ from wayfinder.models.agent_response import AgentResponse
 from wayfinder.models.flight import Flight
 from wayfinder.models.flight_search_request import FlightSearchRequest
 from wayfinder.tools.search_flight_tool import SearchFlightTool
+
+from langsmith import traceable
 
 MODEL = "gpt-4o-mini"
 
@@ -165,7 +168,8 @@ class WayfinderAgent:
         clarification_text = clarification.choices[0].message.content or ""
         return AgentResponse(flights=[], response=clarification_text)
 
-    def run(self, user_query: str) -> AgentResponse:
+    @traceable(name="WayfinderAgent")
+    def run(self, user_query: str, **kwargs: Any) -> AgentResponse:
         """Process a user query and return an AgentResponse.
 
         Step 1: LLM extraction — parses a FlightSearchRequest that includes

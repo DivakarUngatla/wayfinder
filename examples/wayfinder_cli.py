@@ -8,8 +8,11 @@ Usage:
     uv run python examples/wayfinder_cli.py
 """
 
+import uuid
+
 import openai
 from dotenv import load_dotenv
+from langsmith import Client
 from rich.console import Console
 from rich.text import Text
 
@@ -83,8 +86,6 @@ def print_response(response: str, flights: list[Flight]) -> None:
     else:
         console.print("  No flights returned.\n")
 
-    console.print(_DIVIDER)
-
 
 def build_agent() -> WayfinderAgent:
     """Construct and return a WayfinderAgent instance."""
@@ -118,13 +119,37 @@ def chat(agent: WayfinderAgent) -> None:
             break
 
         try:
-            result = agent.run(user_input)
+            run_id = uuid.uuid4()
+            result = agent.run(user_input, langsmith_extra={"run_id": run_id})
         except Exception as e:
             console.print(f"\n[red]Error:[/red] {e}\n")
             console.print(_DIVIDER)
             continue
 
         print_response(result.response, result.flights)
+
+        # Collect user feedback
+        console.print(f"  [dim]{'─' * 37}[/dim]")
+        console.print("  [bold cyan]💬 Feedback[/bold cyan]")
+        feedback = console.input("  [cyan]Was this response helpful?[/cyan] [dim](y/n):[/dim] ").strip().lower()
+        if feedback in {"y", "n"}:
+            score = 1 if feedback == "y" else 0
+            comment = "thumbs_up" if score == 1 else "thumbs_down"
+            try:
+                ls_client = Client()
+                ls_client.create_feedback(
+                    run_id=run_id,
+                    key="user_feedback",
+                    score=score,
+                    comment=comment
+                )
+                console.print("  [dim]Thank you for your feedback![/dim]")
+            except Exception as e:
+                console.print(f"  [dim red]Failed to submit feedback to LangSmith: {e}[/dim red]")
+        else:
+            console.print("  [dim]Feedback skipped.[/dim]")
+
+        console.print(_DIVIDER)
 
 
 def main() -> None:

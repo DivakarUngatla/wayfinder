@@ -54,7 +54,7 @@ Here are the available flights from Bangalore to Tokyo on August 20, 2026:
    - Departure: 14:45
    - Arrival: 23:10
    - Duration: 8h 25m
-   - Price: ₹410.0
+   - Price: ₹41000.0
    - Available Seats: 6
 
 2. **Japan Airlines**
@@ -62,7 +62,7 @@ Here are the available flights from Bangalore to Tokyo on August 20, 2026:
    - Departure: 09:15
    - Arrival: 17:30
    - Duration: 8h 15m
-   - Price: ₹485.5
+   - Price: ₹48550.0
    - Available Seats: 12
 
 3. **ANA**
@@ -70,7 +70,7 @@ Here are the available flights from Bangalore to Tokyo on August 20, 2026:
    - Departure: 06:30
    - Arrival: 14:45
    - Duration: 8h 15m
-   - Price: ₹520.0
+   - Price: ₹52000.0
    - Available Seats: 45
 
 4. **Singapore Airlines**
@@ -78,7 +78,7 @@ Here are the available flights from Bangalore to Tokyo on August 20, 2026:
    - Departure: 11:00
    - Arrival: 19:20
    - Duration: 8h 20m
-   - Price: ₹675.0
+   - Price: ₹67500.0
    - Available Seats: 28
 
 5. **Cathay Pacific**
@@ -86,7 +86,7 @@ Here are the available flights from Bangalore to Tokyo on August 20, 2026:
    - Departure: 18:30
    - Arrival: 02:45 (next day)
    - Duration: 8h 15m
-   - Price: ₹890.0
+   - Price: ₹89000.0
    - Available Seats: 19
 
 If you need more details about any specific flight, feel free to ask!
@@ -95,11 +95,11 @@ If you need more details about any specific flight, feel free to ask!
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -145,7 +145,7 @@ Here are the available flights from Bangalore to Tokyo this week:
    - Departure: 2026-08-20 at 14:45
    - Arrival: 2026-08-20 at 23:10
    - Duration: 8h 25m
-   - Price: ₹410.00
+   - Price: ₹41000.00
    - Available Seats: 6
 
 2. **Japan Airlines**
@@ -153,7 +153,7 @@ Here are the available flights from Bangalore to Tokyo this week:
    - Departure: 2026-08-20 at 09:15
    - Arrival: 2026-08-20 at 17:30
    - Duration: 8h 15m
-   - Price: ₹485.50
+   - Price: ₹48550.00
    - Available Seats: 12
 
 3. **ANA**
@@ -161,7 +161,7 @@ Here are the available flights from Bangalore to Tokyo this week:
    - Departure: 2026-08-20 at 06:30
    - Arrival: 2026-08-20 at 14:45
    - Duration: 8h 15m
-   - Price: ₹520.00
+   - Price: ₹52000.00
    - Available Seats: 45
 
 4. **Singapore Airlines**
@@ -169,7 +169,7 @@ Here are the available flights from Bangalore to Tokyo this week:
    - Departure: 2026-08-20 at 11:00
    - Arrival: 2026-08-20 at 19:20
    - Duration: 8h 20m
-   - Price: ₹675.00
+   - Price: ₹67500.00
    - Available Seats: 28
 
 5. **Cathay Pacific**
@@ -177,7 +177,7 @@ Here are the available flights from Bangalore to Tokyo this week:
    - Departure: 2026-08-20 at 18:30
    - Arrival: 2026-08-21 at 02:45
    - Duration: 8h 15m
-   - Price: ₹890.00
+   - Price: ₹89000.00
    - Available Seats: 19
 
 Please let me know if you need more information!
@@ -186,11 +186,11 @@ Please let me know if you need more information!
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -236,7 +236,7 @@ Here are the available flights from BLR to NRT on August 20, 2026:
    - Departure Time: 14:45
    - Arrival Time: 23:10
    - Duration: 8h 25m
-   - Price: ₹410.00
+   - Price: ₹41000.00
    - Available Seats: 6
 
 2. **Japan Airlines**
@@ -244,7 +244,7 @@ Here are the available flights from BLR to NRT on August 20, 2026:
    - Departure Time: 09:15
    - Arrival Time: 17:30
    - Duration: 8h 15m
-   - Price: ₹485.50
+   - Price: ₹48550.00
    - Available Seats: 12
   
 3. **ANA**
@@ -252,7 +252,7 @@ Here are the available flights from BLR to NRT on August 20, 2026:
    - Departure Time: 06:30
    - Arrival Time: 14:45
    - Duration: 8h 15m
-   - Price: ₹520.00
+   - Price: ₹52000.00
    - Available Seats: 45
 
 4. **Singapore Airlines**
@@ -260,7 +260,7 @@ Here are the available flights from BLR to NRT on August 20, 2026:
    - Departure Time: 11:00
    - Arrival Time: 19:20
    - Duration: 8h 20m
-   - Price: ₹675.00
+   - Price: ₹67500.00
    - Available Seats: 28
 
 5. **Cathay Pacific**
@@ -268,7 +268,7 @@ Here are the available flights from BLR to NRT on August 20, 2026:
    - Departure Time: 18:30
    - Arrival Time: 02:45 (next day)
    - Duration: 8h 15m
-   - Price: ₹890.00
+   - Price: ₹89000.00
    - Available Seats: 19
 
 If you need more specific information or details about any of these flights, let me know!
@@ -277,11 +277,11 @@ If you need more specific information or details about any of these flights, let
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -320,17 +320,17 @@ Recommend the retrieved flight with the lowest price without inventing informati
 
 **Assistant Response**
 
-The cheapest flight from Bangalore to Tokyo tomorrow is with Air India, flight number AI302. It departs at 14:45 and arrives in Tokyo at 23:10, with a duration of 8 hours and 25 minutes. The price is ₹410.
+The cheapest flight from Bangalore to Tokyo tomorrow is with Air India, flight number AI302. It departs at 14:45 and arrives in Tokyo at 23:10, with a duration of 8 hours and 25 minutes. The price is ₹41000.
 
 **Retrieved Flight Results**
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -369,17 +369,17 @@ Recommend the retrieved flight with the lowest price without inventing informati
 
 **Assistant Response**
 
-The most affordable flight from Bangalore to Tokyo next Monday is with Air India, flight number AI302. It departs at 2:45 PM and arrives in Tokyo at 11:10 PM. The duration is 8 hours and 25 minutes, and the price for this flight is ₹410.
+The most affordable flight from Bangalore to Tokyo next Monday is with Air India, flight number AI302. It departs at 2:45 PM and arrives in Tokyo at 11:10 PM. The duration is 8 hours and 25 minutes, and the price for this flight is ₹41000.
 
 **Retrieved Flight Results**
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -418,17 +418,17 @@ Recommend the retrieved flight with the lowest price without inventing informati
 
 **Assistant Response**
 
-The cheapest flight from Bangalore to Tokyo is operated by Air India (flight number AI302). It departs on August 20, 2026, at 14:45 and arrives in Tokyo at 23:10. The price for this flight is ₹410.
+The cheapest flight from Bangalore to Tokyo is operated by Air India (flight number AI302). It departs on August 20, 2026, at 14:45 and arrives in Tokyo at 23:10. The price for this flight is ₹41000.
 
 **Retrieved Flight Results**
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -473,11 +473,11 @@ The fastest flight from Bangalore to Tokyo today is operated by ANA (flight numb
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -521,17 +521,17 @@ The flights from Bangalore to Tokyo with the shortest travel time are three opti
 1. **ANA** - Flight NH701
    - Departure: 2026-08-20 at 06:30
    - Arrival: 2026-08-20 at 14:45
-   - Price: 520.0 INR
+   - Price: 52000.0 INR
 
 2. **Japan Airlines** - Flight JL703
    - Departure: 2026-08-20 at 09:15
    - Arrival: 2026-08-20 at 17:30
-   - Price: 485.5 INR
+   - Price: 48550.0 INR
 
 3. **Cathay Pacific** - Flight CX526
    - Departure: 2026-08-20 at 18:30
    - Arrival: 2026-08-21 at 02:45
-   - Price: 890.0 INR
+   - Price: 89000.0 INR
 
 You can choose any of these flights based on your preferred departure time and budget.
 
@@ -539,11 +539,11 @@ You can choose any of these flights based on your preferred departure time and b
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -588,35 +588,35 @@ You have several options to arrive in Tokyo from Bangalore as early as possible 
    - **Departure:** 06:30
    - **Arrival:** 14:45
    - **Duration:** 8h 15m
-   - **Price:** 520.0 INR
+   - **Price:** 52000.0 INR
    - **Available Seats:** 45
 
 2. **Japan Airlines (JL703)**
    - **Departure:** 09:15
    - **Arrival:** 17:30
    - **Duration:** 8h 15m
-   - **Price:** 485.5 INR
+   - **Price:** 48550.0 INR
    - **Available Seats:** 12
 
 3. **Singapore Airlines (SQ633)**
    - **Departure:** 11:00
    - **Arrival:** 19:20
    - **Duration:** 8h 20m
-   - **Price:** 675.0 INR
+   - **Price:** 67500.0 INR
    - **Available Seats:** 28
 
 4. **Air India (AI302)**
    - **Departure:** 14:45
    - **Arrival:** 23:10
    - **Duration:** 8h 25m
-   - **Price:** 410.0 INR
+   - **Price:** 41000.0 INR
    - **Available Seats:** 6
 
 5. **Cathay Pacific (CX526)**
    - **Departure:** 18:30
    - **Arrival:** 02:45 (next day)
    - **Duration:** 8h 15m
-   - **Price:** 890.0 INR
+   - **Price:** 89000.0 INR
    - **Available Seats:** 19
 
 The earliest flight is with ANA, departing at 06:30 and arriving in Tokyo at 14:45. Let me know if you need more information!
@@ -625,11 +625,11 @@ The earliest flight is with ANA, departing at 06:30 and arriving in Tokyo at 14:
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -674,35 +674,35 @@ Here are the available flights from Bangalore to Tokyo for next Friday (August 2
    - Departure: 14:45
    - Arrival: 23:10
    - Duration: 8h 25m
-   - Price: 410.0 INR
+   - Price: 41000.0 INR
    - Available Seats: 6
 
 2. **Japan Airlines (JL703)**
    - Departure: 09:15
    - Arrival: 17:30
    - Duration: 8h 15m
-   - Price: 485.5 INR
+   - Price: 48550.0 INR
    - Available Seats: 12
 
 3. **ANA (NH701)**
    - Departure: 06:30
    - Arrival: 14:45
    - Duration: 8h 15m
-   - Price: 520.0 INR
+   - Price: 52000.0 INR
    - Available Seats: 45
 
 4. **Singapore Airlines (SQ633)**
    - Departure: 11:00
    - Arrival: 19:20
    - Duration: 8h 20m
-   - Price: 675.0 INR
+   - Price: 67500.0 INR
    - Available Seats: 28
 
 5. **Cathay Pacific (CX526)**
    - Departure: 18:30
    - Arrival: 02:45 (next day)
    - Duration: 8h 15m
-   - Price: 890.0 INR
+   - Price: 89000.0 INR
    - Available Seats: 19
 
 You can choose any of these flights as all have available seats, but please note that Air India (AI302) has the least number of available seats (6). If you wish to book two seats, it would be advisable to consider booking with ANA or Japan Airlines, which have more available seats. Let me know if you need more information!
@@ -711,11 +711,11 @@ You can choose any of these flights as all have available seats, but please note
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -761,7 +761,7 @@ Here are the available flights from Bangalore to Tokyo for your family of 4:
    - Departure: 2026-08-20 at 14:45
    - Arrival: 2026-08-20 at 23:10
    - Duration: 8h 25m
-   - Price: ₹410.00 (per person)
+   - Price: ₹41000.00 (per person)
    - Available Seats: 6
 
 2. **Japan Airlines**
@@ -769,7 +769,7 @@ Here are the available flights from Bangalore to Tokyo for your family of 4:
    - Departure: 2026-08-20 at 09:15
    - Arrival: 2026-08-20 at 17:30
    - Duration: 8h 15m
-   - Price: ₹485.50 (per person)
+   - Price: ₹48550.00 (per person)
    - Available Seats: 12
 
 3. **ANA**
@@ -777,7 +777,7 @@ Here are the available flights from Bangalore to Tokyo for your family of 4:
    - Departure: 2026-08-20 at 06:30
    - Arrival: 2026-08-20 at 14:45
    - Duration: 8h 15m
-   - Price: ₹520.00 (per person)
+   - Price: ₹52000.00 (per person)
    - Available Seats: 45
 
 4. **Singapore Airlines**
@@ -785,7 +785,7 @@ Here are the available flights from Bangalore to Tokyo for your family of 4:
    - Departure: 2026-08-20 at 11:00
    - Arrival: 2026-08-20 at 19:20
    - Duration: 8h 20m
-   - Price: ₹675.00 (per person)
+   - Price: ₹67500.00 (per person)
    - Available Seats: 28
 
 5. **Cathay Pacific**
@@ -793,7 +793,7 @@ Here are the available flights from Bangalore to Tokyo for your family of 4:
    - Departure: 2026-08-20 at 18:30
    - Arrival: 2026-08-21 at 02:45
    - Duration: 8h 15m
-   - Price: ₹890.00 (per person)
+   - Price: ₹89000.00 (per person)
    - Available Seats: 19
 
 To ensure availability for your family of 4, please note the available seats for each flight. If you need any further details or assistance, feel free to ask!
@@ -802,11 +802,11 @@ To ensure availability for your family of 4, please note the available seats for
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -852,35 +852,35 @@ Here are the available flights from Bangalore to Tokyo for tomorrow:
    - Departure: 14:45
    - Arrival: 23:10
    - Duration: 8h 25m
-   - Price: ₹410 (Available Seats: 6)
+   - Price: ₹41000 (Available Seats: 6)
 
 2. **Japan Airlines**
    - Flight Number: JL703
    - Departure: 09:15
    - Arrival: 17:30
    - Duration: 8h 15m
-   - Price: ₹485.5 (Available Seats: 12)
+   - Price: ₹48550.0 (Available Seats: 12)
 
 3. **ANA**
    - Flight Number: NH701
    - Departure: 06:30
    - Arrival: 14:45
    - Duration: 8h 15m
-   - Price: ₹520 (Available Seats: 45)
+   - Price: ₹52000 (Available Seats: 45)
 
 4. **Singapore Airlines**
    - Flight Number: SQ633
    - Departure: 11:00
    - Arrival: 19:20
    - Duration: 8h 20m
-   - Price: ₹675 (Available Seats: 28)
+   - Price: ₹67500 (Available Seats: 28)
 
 5. **Cathay Pacific**
    - Flight Number: CX526
    - Departure: 18:30
    - Arrival: 02:45 (next day)
    - Duration: 8h 15m
-   - Price: ₹890 (Available Seats: 19)
+   - Price: ₹89000 (Available Seats: 19)
 
 Let me know if you need more information about any specific flight!
 
@@ -888,11 +888,11 @@ Let me know if you need more information about any specific flight!
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -937,35 +937,35 @@ Yes, there are flights from Bangalore to Tokyo next Sunday, August 23, 2026. Her
    - Departure: 14:45
    - Arrival: 23:10
    - Duration: 8h 25m
-   - Price: ₹410.00
+   - Price: ₹41000.00
    - Available Seats: 6
 
 2. **Japan Airlines**: Flight JL703
    - Departure: 09:15
    - Arrival: 17:30
    - Duration: 8h 15m
-   - Price: ₹485.50
+   - Price: ₹48550.00
    - Available Seats: 12
 
 3. **ANA**: Flight NH701
    - Departure: 06:30
    - Arrival: 14:45
    - Duration: 8h 15m
-   - Price: ₹520.00
+   - Price: ₹52000.00
    - Available Seats: 45
 
 4. **Singapore Airlines**: Flight SQ633
    - Departure: 11:00
    - Arrival: 19:20
    - Duration: 8h 20m
-   - Price: ₹675.00
+   - Price: ₹67500.00
    - Available Seats: 28
 
 5. **Cathay Pacific**: Flight CX526
    - Departure: 18:30
    - Arrival: 02:45 (next day)
    - Duration: 8h 15m
-   - Price: ₹890.00
+   - Price: ₹89000.00
    - Available Seats: 19
 
 Let me know if you need more information about any of these flights!
@@ -974,11 +974,11 @@ Let me know if you need more information about any of these flights!
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -1024,35 +1024,35 @@ I found several flights from Bangalore to Tokyo on the 15th of next month. Here 
    - Departure: 14:45
    - Arrival: 23:10
    - Duration: 8h 25m
-   - Price: ₹410 (12 seats available)
+   - Price: ₹41000 (12 seats available)
 
 2. **Japan Airlines**
    - Flight Number: JL703
    - Departure: 09:15
    - Arrival: 17:30
    - Duration: 8h 15m
-   - Price: ₹485.5 (12 seats available)
+   - Price: ₹48550.0 (12 seats available)
 
 3. **ANA**
    - Flight Number: NH701
    - Departure: 06:30
    - Arrival: 14:45
    - Duration: 8h 15m
-   - Price: ₹520 (45 seats available)
+   - Price: ₹52000 (45 seats available)
 
 4. **Singapore Airlines**
    - Flight Number: SQ633
    - Departure: 11:00
    - Arrival: 19:20
    - Duration: 8h 20m
-   - Price: ₹675 (28 seats available)
+   - Price: ₹67500 (28 seats available)
 
 5. **Cathay Pacific**
    - Flight Number: CX526
    - Departure: 18:30
    - Arrival: 02:45 (next day)
    - Duration: 8h 15m
-   - Price: ₹890 (19 seats available)
+   - Price: ₹89000 (19 seats available)
 
 If you have any further preferences or questions about these flights, feel free to ask!
 
@@ -1060,11 +1060,11 @@ If you have any further preferences or questions about these flights, feel free 
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -1111,7 +1111,7 @@ Yes, there are flights from Bangalore to Tokyo with more than 20 available seats
    - Arrival Time: 2026-08-20 at 14:45
    - Duration: 8h 15m
    - Available Seats: 45
-   - Price: 520.0 INR
+   - Price: 52000.0 INR
 
 2. **Singapore Airlines**
    - Flight Number: SQ633
@@ -1119,7 +1119,7 @@ Yes, there are flights from Bangalore to Tokyo with more than 20 available seats
    - Arrival Time: 2026-08-20 at 19:20
    - Duration: 8h 20m
    - Available Seats: 28
-   - Price: 675.0 INR 
+   - Price: 67500.0 INR 
 
 Both of these flights meet your requirement for more than 20 available seats.
 
@@ -1127,11 +1127,11 @@ Both of these flights meet your requirement for more than 20 available seats.
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -1177,35 +1177,35 @@ I found several flights from Bangalore to Tokyo with available seats:
    - Departure Time: August 20, 2026, at 14:45
    - Arrival Time: August 20, 2026, at 23:10
    - Duration: 8h 25m
-   - Price: ₹410 (6 seats available)
+   - Price: ₹41000 (6 seats available)
 
 2. **Japan Airlines**
    - Flight Number: JL703
    - Departure Time: August 20, 2026, at 09:15
    - Arrival Time: August 20, 2026, at 17:30
    - Duration: 8h 15m
-   - Price: ₹485.50 (12 seats available)
+   - Price: ₹48550.00 (12 seats available)
 
 3. **ANA**
    - Flight Number: NH701
    - Departure Time: August 20, 2026, at 06:30
    - Arrival Time: August 20, 2026, at 14:45
    - Duration: 8h 15m
-   - Price: ₹520 (45 seats available)
+   - Price: ₹52000 (45 seats available)
 
 4. **Singapore Airlines**
    - Flight Number: SQ633
    - Departure Time: August 20, 2026, at 11:00
    - Arrival Time: August 20, 2026, at 19:20
    - Duration: 8h 20m
-   - Price: ₹675 (28 seats available)
+   - Price: ₹67500 (28 seats available)
 
 5. **Cathay Pacific**
    - Flight Number: CX526
    - Departure Time: August 20, 2026, at 18:30
    - Arrival Time: August 21, 2026, at 02:45
    - Duration: 8h 15m
-   - Price: ₹890 (19 seats available)
+   - Price: ₹89000 (19 seats available)
 
 Let me know if you need any additional information!
 
@@ -1213,11 +1213,11 @@ Let me know if you need any additional information!
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -1262,14 +1262,14 @@ Here are the flights from Bangalore to Tokyo that arrive before 8 PM:
    - Departure: 9:15 AM
    - Arrival: 5:30 PM
    - Duration: 8h 15m
-   - Price: 485.5 INR
+   - Price: 48550.0 INR
    - Available Seats: 12
 
 2. **Singapore Airlines (Flight SQ633)**
    - Departure: 11:00 AM
    - Arrival: 7:20 PM
    - Duration: 8h 20m
-   - Price: 675.0 INR
+   - Price: 67500.0 INR
    - Available Seats: 28
 
 These two options arrive before 8 PM.
@@ -1278,11 +1278,11 @@ These two options arrive before 8 PM.
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -1327,7 +1327,7 @@ To arrive in Tokyo by 10 PM for your meeting, the best flight option from Bangal
   - **Departure:** August 20, 2026, at 14:45
   - **Arrival:** August 20, 2026, at 23:10
   - **Duration:** 8h 25m
-  - **Price:** ₹410
+  - **Price:** ₹41000
 
 This flight will get you to Tokyo after your meeting starts, arriving at 11:10 PM.
 
@@ -1335,11 +1335,11 @@ This flight will get you to Tokyo after your meeting starts, arriving at 11:10 P
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)
@@ -1857,7 +1857,7 @@ The cheapest flight from Bangalore to Tokyo tomorrow with at least 2 available s
 - **Departure Time:** 14:45
 - **Arrival Time:** 23:10
 - **Duration:** 8h 25m
-- **Price:** 410.0 INR
+- **Price:** 41000.0 INR
 - **Available Seats:** 6
 
 Let me know if you need more information!
@@ -1866,11 +1866,11 @@ Let me know if you need more information!
 
 | # | Airline | Flight | Departure | Arrival | Duration | Price (INR) | Seats |
 |---|---------|--------|-----------|---------|----------|-------------|-------|
-| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 520.00 | 45 |
-| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 485.50 | 12 |
-| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 675.00 | 28 |
-| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 410.00 | 6 |
-| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 890.00 | 19 |
+| 1 | ANA | NH701 | 06:30 | 14:45 | 8h 15m | 52000.00 | 45 |
+| 2 | Japan Airlines | JL703 | 09:15 | 17:30 | 8h 15m | 48550.00 | 12 |
+| 3 | Singapore Airlines | SQ633 | 11:00 | 19:20 | 8h 20m | 67500.00 | 28 |
+| 4 | Air India | AI302 | 14:45 | 23:10 | 8h 25m | 41000.00 | 6 |
+| 5 | Cathay Pacific | CX526 | 18:30 | 02:45 | 8h 15m | 89000.00 | 19 |
 
 
 **Rating** (1 = poor · 5 = excellent)

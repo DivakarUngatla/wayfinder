@@ -37,7 +37,7 @@ def main() -> None:
     evaluator = RuleBasedEvaluator()
 
     # --- Search ---
-    query = "Book me a flight from Bangalore to Tokyo"
+    query = "Find me a flight from Bangalore to Tokyo"
     result = agent.run(query)
     actual_flights = result.flights
 
