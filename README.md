@@ -8,7 +8,7 @@
 
 Wayfinder is the companion repository for the [**AI Engineering Fundamentals**](https://ai.plainenglish.io/software-tests-vs-ai-evals-why-ai-applications-need-a-different-way-of-testing-205b6ae197fb?sharedUserId=divakar.ungatla) article series.
 
-Instead of introducing isolated evaluation techniques, Wayfinder incrementally builds a complete AI evaluation platform—from simple rule-based evaluators to production-ready evaluation pipelines.
+Instead of introducing isolated evaluation techniques, Wayfinder incrementally builds a complete AI evaluation system—from simple rule-based evaluators to production evaluation pipelines and experiment-driven comparison of application changes.
 
 An AI-powered flight search assistant serves as the example application, allowing every evaluation technique to be demonstrated using real-world scenarios.
 
@@ -28,7 +28,7 @@ Wayfinder answers these questions by implementing modern AI evaluation technique
 
 # Current Milestone
 
-## ✅ Milestone 5 — Online Evaluation
+## 🚧 Milestone 6 — Experiment Comparison
 
 Current capabilities include:
 
@@ -47,6 +47,10 @@ Current capabilities include:
 - Representative evaluation datasets
 - Local evaluation examples
 - LangSmith integration
+- Experiment comparison workflow
+- Focused target and regression-guard evaluation cases
+- Repeated evaluation runs
+- Baseline experiment tracking
 
 # Project Structure
 
@@ -64,7 +68,8 @@ examples/
 ├── rule_based_evaluation/
 ├── human_evaluation/
 ├── llm_judge_evaluation/
-└── online_evaluation/
+├── online_evaluation/
+└── experiment_comparison/
 
 docs/
 ```
@@ -115,7 +120,7 @@ OPENAI_API_KEY=your_api_key
 
 ## LangSmith
 
-LangSmith is required for interaction tracing and the LangSmith-based evaluation examples, including Online Evaluation.
+LangSmith is required for interaction tracing and the LangSmith-based evaluation examples, including Online Evaluation and Experiment Comparison.
 
 Create an account and API key:
 
@@ -190,10 +195,23 @@ Then run the online evaluator:
 uv run python examples/online_evaluation/evaluate_recent_runs.py
 ```
 
+
 The evaluator processes recent Wayfinder interactions captured in LangSmith and attaches automated quality scores and explanations back to each trace.
 
 Explicit user feedback collected through the CLI is also attached to the corresponding [**LangSmith trace**](https://smith.langchain.com).
 
+## Run an Evaluation Experiment
+
+Run the focused experiment-comparison dataset against the current version of Wayfinder:
+
+```bash
+uv run python examples/experiment_comparison/compare_experiments.py \
+  --dataset-name wayfinder_experiment_comparison \
+  --prefix wayfinder-baseline \
+  --repetitions 5
+```
+
+The runner evaluates the same examples repeatedly and records the results as a LangSmith experiment, allowing application changes to be compared against a consistent baseline.
 
 # AI Engineering Fundamentals
 
@@ -212,7 +230,7 @@ Each article introduces one AI evaluation concept, while this repository provide
 - ✅ [Part 4 — Human Evaluation](https://pub.towardsai.net/human-evaluation-building-reusable-evaluation-datasets-for-ai-applications-54f6d93fd2db?sharedUserId=divakar.ungatla)
 - ✅ [Part 5 — LLM-as-a-Judge](https://medium.com/@divakar.ungatla/llm-as-a-judge-building-automated-evaluation-pipelines-for-ai-applications-8680a412a1bd?sharedUserId=divakar.ungatla)
 - ✅ [Part 6 — Online Evaluation](https://medium.com/@divakar.ungatla/online-evaluation-building-ai-evaluation-pipelines-for-real-user-interactions-a25081a8f390?sharedUserId=divakar.ungatla)
-- ⏳ Part 7 — Comparing Evaluation Experiments
+- ✅ [Part 7 — Comparing Evaluation Experiments](https://medium.com/@divakar.ungatla/comparing-evaluation-experiments-building-ai-evaluation-pipelines-for-real-user-interactions-a25081a8f390?sharedUserId=divakar.ungatla)
 
 # Releases
 
@@ -227,6 +245,7 @@ Checking out a release allows you to reproduce the exact implementation used thr
 | Human Evaluation | [v0.3.0](https://github.com/DivakarUngatla/wayfinder/tree/v0.3.0) |
 | LLM-as-a-Judge | [v0.4.0](https://github.com/DivakarUngatla/wayfinder/tree/v0.4.0) |
 | Online Evaluation | [v0.5.0](https://github.com/DivakarUngatla/wayfinder/tree/v0.5.0) |
+| Experiment Comparison | [v0.6.0](https://github.com/DivakarUngatla/wayfinder/tree/v0.6.0) |
 
 # Documentation
 

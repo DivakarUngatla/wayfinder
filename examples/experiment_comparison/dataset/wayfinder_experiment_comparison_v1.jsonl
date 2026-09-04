@@ -1,0 +1,2 @@
+{"id": "cheapest_with_min_seats", "query": "Find the cheapest flight from Bangalore to Tokyo tomorrow with at least 2 available seats.", "expected_behavior": "Recommend the lowest-priced retrieved flight that satisfies the stated minimum seat requirement. Do not recommend a more expensive flight when a cheaper eligible flight exists."}
+{"id": "find_cheapest_flight", "query": "What is the cheapest flight from Bangalore to Tokyo tomorrow?", "expected_behavior": "Recommend the lowest-priced retrieved flight for the requested route and date."}
