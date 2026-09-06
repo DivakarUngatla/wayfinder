@@ -2,15 +2,35 @@
 
 **A reference implementation for learning and building AI evaluation systems.**
 
-[📖 AI Engineering Fundamentals](https://ai.plainenglish.io/software-tests-vs-ai-evals-why-ai-applications-need-a-different-way-of-testing-205b6ae197fb?sharedUserId=divakar.ungatla)
+[📖 Start the AI Evaluation Series](https://ai.plainenglish.io/software-tests-vs-ai-evals-why-ai-applications-need-a-different-way-of-testing-205b6ae197fb?sharedUserId=divakar.ungatla)
 • [💻 GitHub Releases](https://github.com/DivakarUngatla/wayfinder/releases)
 • [🐛 Report an Issue](https://github.com/DivakarUngatla/wayfinder/issues)
 
-Wayfinder is the companion repository for the [**AI Engineering Fundamentals**](https://ai.plainenglish.io/software-tests-vs-ai-evals-why-ai-applications-need-a-different-way-of-testing-205b6ae197fb?sharedUserId=divakar.ungatla) article series.
+Wayfinder is a reference implementation for building and understanding AI evaluation systems.
 
-Instead of introducing isolated evaluation techniques, Wayfinder incrementally builds a complete AI evaluation system—from simple rule-based evaluators to production evaluation pipelines and experiment-driven comparison of application changes.
+It evolves a single AI-powered flight search application through rule-based evaluation, human evaluation, LLM-as-a-Judge, online evaluation, and experiment comparison.
 
-An AI-powered flight search assistant serves as the example application, allowing every evaluation technique to be demonstrated using real-world scenarios.
+The repository was built alongside the **AI Engineering Fundamentals — AI Evaluation** article series, with each stage introducing the next layer of the evaluation system.
+
+## What This Repository Covers
+
+```text
+Software Tests vs AI Evals
+        ↓
+Evaluation Fundamentals
+        ↓
+Rule-Based Evaluation
+        ↓
+Human Evaluation
+        ↓
+LLM-as-a-Judge
+        ↓
+Online Evaluation
+        ↓
+Evaluation Experiments
+```
+
+Each stage builds on the same Wayfinder application, showing how an evaluation system can evolve as an AI application moves from development toward production.
 
 # Why Wayfinder?
 
@@ -24,33 +44,22 @@ The real engineering challenge is answering questions like:
 - How can I scale evaluations beyond manual review?
 - How do I confidently ship AI applications to production?
 
-Wayfinder answers these questions by implementing modern AI evaluation techniques one milestone at a time.
+Wayfinder explores these questions through practical implementations of modern AI evaluation techniques.
 
-# Current Milestone
+# What's Implemented
 
-## 🚧 Milestone 6 — Experiment Comparison
-
-Current capabilities include:
-
-- AI-powered flight search assistant
-- Interactive command-line chat interface
+- AI-powered flight search reference application
 - Rule-Based Evaluation
-- Human Evaluation workflow
-- LLM-as-a-Judge evaluation pipeline
-- Online Evaluation pipeline
-- Real user interaction tracing
-- Explicit user feedback collection
-- Reference-free online LLM judge
-- Background evaluation of captured interactions
-- Evaluation criteria and scoring rubrics
-- Structured judge outputs
-- Representative evaluation datasets
-- Local evaluation examples
-- LangSmith integration
-- Experiment comparison workflow
-- Focused target and regression-guard evaluation cases
+- Human Evaluation
+- LLM-as-a-Judge
+- Online Evaluation
+- Real user interaction tracing and explicit feedback
+- Reference-free evaluation of production interactions
+- Evaluation datasets and scoring rubrics
+- LangSmith tracing and evaluation integration
+- Evaluation experiment comparison
+- Target and regression-guard evaluation cases
 - Repeated evaluation runs
-- Baseline experiment tracking
 
 # Project Structure
 
@@ -70,8 +79,6 @@ examples/
 ├── llm_judge_evaluation/
 ├── online_evaluation/
 └── experiment_comparison/
-
-docs/
 ```
 
 # Prerequisites
@@ -207,17 +214,17 @@ Run the focused experiment-comparison dataset against the current version of Way
 ```bash
 uv run python examples/experiment_comparison/compare_experiments.py \
   --dataset-name wayfinder_experiment_comparison \
-  --prefix wayfinder-baseline \
+  --prefix wayfinder-experiment \
   --repetitions 5
 ```
 
-The runner evaluates the same examples repeatedly and records the results as a LangSmith experiment, allowing application changes to be compared against a consistent baseline.
+The runner evaluates the same examples repeatedly and records the results as a LangSmith experiment. Run it against different application versions to compare behavior using the same dataset and evaluator.
 
 # AI Engineering Fundamentals
 
-Wayfinder evolves alongside the [**AI Engineering Fundamentals**](https://ai.plainenglish.io/software-tests-vs-ai-evals-why-ai-applications-need-a-different-way-of-testing-205b6ae197fb?sharedUserId=divakar.ungatla) article series.
+Wayfinder was built alongside the **AI Engineering Fundamentals — AI Evaluation** article series.
 
-Each article introduces one AI evaluation concept, while this repository provides the complete runnable implementation.
+Each article introduces an AI evaluation concept, while this repository provides the runnable implementation.
 
 ## Foundations
 
@@ -228,15 +235,15 @@ Each article introduces one AI evaluation concept, while this repository provide
 
 - ✅ [Part 3 — Rule-Based Evaluation](https://medium.com/towards-artificial-intelligence/rule-based-evaluation-building-a-production-ready-ai-evaluation-pipeline-ee6ada3180b8?sharedUserId=divakar.ungatla)
 - ✅ [Part 4 — Human Evaluation](https://pub.towardsai.net/human-evaluation-building-reusable-evaluation-datasets-for-ai-applications-54f6d93fd2db?sharedUserId=divakar.ungatla)
-- ✅ [Part 5 — LLM-as-a-Judge](https://medium.com/@divakar.ungatla/llm-as-a-judge-building-automated-evaluation-pipelines-for-ai-applications-8680a412a1bd?sharedUserId=divakar.ungatla)
-- ✅ [Part 6 — Online Evaluation](https://medium.com/@divakar.ungatla/online-evaluation-building-ai-evaluation-pipelines-for-real-user-interactions-a25081a8f390?sharedUserId=divakar.ungatla)
-- ✅ [Part 7 — Comparing Evaluation Experiments](https://medium.com/@divakar.ungatla/comparing-evaluation-experiments-building-ai-evaluation-pipelines-for-real-user-interactions-a25081a8f390?sharedUserId=divakar.ungatla)
+- ✅ [Part 5 — LLM-as-a-Judge](https://medium.com/towards-artificial-intelligence/llm-as-a-judge-building-automated-evaluation-pipelines-for-ai-applications-8680a412a1bd?sharedUserId=divakar.ungatla)
+- ✅ [Part 6 — Online Evaluation](https://medium.com/towards-artificial-intelligence/online-evaluation-building-ai-evaluation-pipelines-for-real-user-interactions-a25081a8f390?sharedUserId=divakar.ungatla)
+- ✅ [Part 7 — Comparing Evaluation Experiments](https://medium.com/towards-artificial-intelligence/comparing-ai-evaluation-experiments-measuring-the-impact-of-changes-to-ai-applications-e57078deed7f?sharedUserId=divakar.ungatla)
 
 # Releases
 
-Each GitHub release corresponds to a milestone in the AI Engineering Fundamentals series.
+Each GitHub release captures a reproducible milestone in Wayfinder's evolution.
 
-Checking out a release allows you to reproduce the exact implementation used throughout that article.
+Earlier releases correspond to the implementation developed in each article. For Part 7, `v0.6.0` provides the baseline used for the experiment comparison, while `main` contains the completed candidate implementation.
 
 | Milestone | Release |
 |-----------|---------|
@@ -246,14 +253,6 @@ Checking out a release allows you to reproduce the exact implementation used thr
 | LLM-as-a-Judge | [v0.4.0](https://github.com/DivakarUngatla/wayfinder/tree/v0.4.0) |
 | Online Evaluation | [v0.5.0](https://github.com/DivakarUngatla/wayfinder/tree/v0.5.0) |
 | Experiment Comparison | [v0.6.0](https://github.com/DivakarUngatla/wayfinder/tree/v0.6.0) |
-
-# Documentation
-
-Additional documentation is available in the `docs/` directory.
-
-- Architecture
-- Design Decisions
-- Coding Principles
 
 # Contributing
 
