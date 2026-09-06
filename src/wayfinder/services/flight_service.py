@@ -21,7 +21,7 @@ class FlightService:
         """Return a predefined set of flights for the requested route."""
         departure_date = request.departure_date
 
-        return [
+        flights = [
             Flight(
                 airline="ANA",
                 flight_number="NH701",
@@ -85,3 +85,20 @@ class FlightService:
                 available_seats=19,
             ),
         ]
+
+        # 1. Filter by available seats using passengers
+        flights = [f for f in flights if f.available_seats >= request.passengers]
+
+        # 2. Filter by arrival time
+        if request.arrival_before:
+            arrival_before_time = request.arrival_before.replace(tzinfo=None)
+            arrival_limit = datetime.combine(request.departure_date, arrival_before_time)
+            flights = [f for f in flights if f.arrival_time < arrival_limit]
+
+        # 3. Sort by requested optimization
+        if request.sort_by == "price":
+            flights.sort(key=lambda f: f.price)
+        elif request.sort_by == "duration":
+            flights.sort(key=lambda f: f.duration)
+
+        return flights

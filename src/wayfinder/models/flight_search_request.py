@@ -1,6 +1,7 @@
 """Flight search request models."""
 
-from datetime import date
+from datetime import date, time
+from typing import Literal
 
 from pydantic import BaseModel, Field
 
@@ -35,3 +36,5 @@ class FlightSearchRequest(BaseModel):
     destination: str = Field(description="Arrival airport or city code. Empty string if not provided by the user.")
     departure_date: date = Field(description="Requested departure date.")
     passengers: int = Field(default=1, description="Number of passengers to book.")
+    sort_by: Literal["price", "duration"] | None = Field(default=None, description="Requested optimization sort. Extract 'price' if cheapest requested, 'duration' if fastest requested.")
+    arrival_before: time | None = Field(default=None, description="Requested arrival time constraint, e.g. before 8 PM.")

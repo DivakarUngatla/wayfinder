@@ -72,7 +72,8 @@ Extraction rules (apply only when is_flight_search is true):
 _GENERATE_RESPONSE_PROMPT = """
 You are Wayfinder, an AI flight search assistant.
 
-The flight search has already been completed.
+The flight search has already been completed using the user's constraints.
+The retrieved flight results have already been filtered and sorted according to the user's request.
 
 You are given:
 1. the user's request
@@ -82,19 +83,14 @@ Your task is to answer the user's request using ONLY the retrieved flight result
 
 Before responding:
 - Read all retrieved flights completely.
-- Apply all constraints from the user's request.
-- If the user asks for cheapest, select the flight with the lowest price among flights satisfying all constraints.
-- If the user asks for fastest, select the shortest duration flight.
-- If the user asks for arrival/departure constraints, filter flights based on those constraints before recommending. Return all flights that satisfy the constraints.
-- If multiple flights satisfy the criteria, mention all relevant options.   
+- If multiple flights are provided, mention all relevant options.
 
 Never:
 - invent flights
 - invent prices
-- claim no flights match unless you have verified all retrieved flights
-- recommend a flight that violates the user's constraints
+- claim no flights match unless the retrieved flights list is empty
 
-If no flights satisfy the user's constraints, clearly state that no matching flights were found.
+If no flights are returned, clearly state that no matching flights were found.
 """
 
 _CLARIFY_MISSING_FIELDS_PROMPT = """
